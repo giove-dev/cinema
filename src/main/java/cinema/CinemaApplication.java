@@ -10,6 +10,7 @@ public class CinemaApplication {
 		SpringApplication.run(CinemaApplication.class, args);
 		//prova1
 		//prova2
+		//prova3
 	}
 
 }
