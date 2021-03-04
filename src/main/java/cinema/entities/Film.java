@@ -14,6 +14,7 @@ import javax.persistence.Table;
 @Table(name = "film")
 public class Film {
 	//prova commento 
+	//prova commento 2
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
