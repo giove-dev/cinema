@@ -13,7 +13,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "film")
 public class Film {
-	
+	//prova commento 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
