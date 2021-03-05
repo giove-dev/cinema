@@ -4,10 +4,13 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
+
 
 import cinema.entities.Film;
 import cinema.service.FilmIService;
@@ -50,5 +53,22 @@ public class FilmCtrl {
 	}
 	
 	
-
+	@RequestMapping("/update/{id}")
+	public ModelAndView formModifica(@PathVariable("id") int id) {
+		
+		Film nuovoFilm = s.getOne(id);
+		
+		return new ModelAndView("update_film", "film",nuovoFilm);
+	}
+	
+	@RequestMapping(path = "/updateFilm/{id}", method = RequestMethod.POST)
+	public String updateFilm(@PathVariable("id") int id, @Validated @ModelAttribute("film") Film f) {
+		
+		f.setId(id);
+		
+		Film nuovoFilm = s.update(f);
+		
+		return "redirect:/admin/films/"+ nuovoFilm.getId();
+	
+	}
 }
