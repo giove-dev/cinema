@@ -10,13 +10,9 @@
 <h1>Lista utenti</h1>
 	
 	<ul>
-	
-<!--  	<c:  items="${utente}" var="user">-->
-	
-		<li>${utente}</li>
-		<li>${utente.getUsername()}</li>
-	
-	
+		<li>${utente[0].username }</li>
+		<li>${utente[1].username }</li>
+		<li>${utente[2].username }</li>
 	</ul>
 
 </body>
