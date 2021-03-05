@@ -18,7 +18,9 @@
 				<c:out value="${film[i].sala}" />
 				<c:out value="${film[i].giorno}" />
 				<c:out value="${film[i].ora}" />
+				<a class="btn btn-danger" href=/films/delete?id=${films[i].getId()} >elimina</a>
 			</li>
+			
 		</c:forEach>
 	</ul>
 
