@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
@@ -33,6 +34,19 @@ public class FilmCtrl {
 		
 		List<Film> films = s.getAll();
 		return new ModelAndView("dettaglio_film", "film", films);
+	}
+	
+	@RequestMapping("/add")
+	public String formInserimento() {
+		return "addFilm";
+	}
+	
+	@RequestMapping(path = "/addFilm")
+	public String addFilm(@ModelAttribute("film") Film f) {
+		
+		Film nuovoFilm = s.addOne(f);
+		
+		return "redirect:/admin/dettaglio/"+nuovoFilm.getId();
 	}
 	
 	

@@ -10,20 +10,10 @@
 <body>
 <h1>Dettaglio film</h1>
 
-<!--  	<ul>
-		<c:forEach var="i" begin="0" end="${film.size()-1}">
-				<h3><c:out value="${film[id].titolo}" /></h3>
-			<li>
-				<c:out value="${film[id].titolo}" />
-				<c:out value="${film[id].titolo}" />
-			</li>
-		</c:forEach>
-	</ul>
--->
-<h1>${film[id].titolo}</h1>
+<h1>${film[id-1].titolo}</h1>
 <ul>
-	${film[id].locandina}<br>
-	${film[id].descrizione}
+	${film[id-1].locandina}<br>
+	${film[id-1].descrizione}
 </ul>
 </body>
 </html>
