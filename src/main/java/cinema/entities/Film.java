@@ -13,8 +13,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "film")
 public class Film {
-	//prova commento 
-	//prova commento 2
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
@@ -28,7 +27,14 @@ public class Film {
 	@Column(columnDefinition = "DATE")
 	private LocalDate giorno;
 	private String link_trailer;
+	private String locandina;
 	
+	public String getLocandina() {
+		return locandina;
+	}
+	public void setLocandina(String locandina) {
+		this.locandina = locandina;
+	}
 	public int getId() {
 		return id;
 	}
@@ -78,12 +84,5 @@ public class Film {
 	public void setLink_trailer(String link_trailer) {
 		this.link_trailer = link_trailer;
 	}
-	
-	
-	
-	
-	
-	
-	
 
 }

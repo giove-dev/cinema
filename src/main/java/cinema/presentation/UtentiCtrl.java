@@ -21,12 +21,8 @@ public class UtentiCtrl {
 	public ModelAndView listaUtenti() {
 		
 		List<Utente> users = s.getAllUtenti();
-		
-		
 		return new ModelAndView("lista_utenti", "utente", users);
 		
 	}
 	
-	
-
 }
