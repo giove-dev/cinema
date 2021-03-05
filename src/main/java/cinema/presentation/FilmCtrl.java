@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import cinema.entities.Film;
-import cinema.service.FilmIService;
+import cinema.service.FilmService;
 
 @Controller
 @RequestMapping("/admin")
 public class FilmCtrl {
 	
 	@Autowired
-	private FilmIService s;
+	private FilmService s;
 	
 	@RequestMapping("/films")
 	public ModelAndView listaFilm() {
@@ -53,7 +53,7 @@ public class FilmCtrl {
 	}
 	
 	
-	@RequestMapping("/update/{id}")
+	@RequestMapping("/films/update/{id}")
 	public ModelAndView formModifica(@PathVariable("id") int id) {
 		
 		Film nuovoFilm = s.getOne(id);
@@ -72,10 +72,10 @@ public class FilmCtrl {
 	
 	}
 	
-	@RequestMapping("/delete")
+	@RequestMapping("/films/delete")
 	private String deleteFilm(@RequestParam("id") int id) {
 		
-		s.deleteOne(id);
+		s.deleteById(id);
 
 		return "eliminato";
 	}

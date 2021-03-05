@@ -13,6 +13,6 @@ public interface FilmIService {
 //	List<Film> getGenere(String genere); 
 	Film addOne(Film f);
 	Film update(Film f);
-	void deleteOne(int id);
+	void deleteById(int id);
 
 }

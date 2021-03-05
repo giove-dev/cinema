@@ -50,15 +50,12 @@ public class FilmService implements FilmIService {
 	film=dao.save(f);
 	return film;
 	
-		
 	}
-
-
-
+	
 	@Override
-	public void deleteOne(int id) {
-		dao.deleteById(id);
-		
+	public void deleteById(int id) {
+		dao.deleteById(id);	
 	}
-
+	
+	
 }
