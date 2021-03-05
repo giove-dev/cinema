@@ -12,7 +12,12 @@
 
 	<ul>
 		<c:forEach var="i" begin="0" end="${utente.size()-1}">
-			<li><c:out value="${utente[i].username}" /></li>
+				<h3><c:out value="${utente[i].username}" /></h3>
+			<li>
+				<c:out value="${utente[i].nome}" />
+				<c:out value="${utente[i].cognome}" />
+				<c:out value="${utente[i].ultimamodifica}" />
+			</li>
 		</c:forEach>
 	</ul>
 
