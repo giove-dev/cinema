@@ -39,7 +39,7 @@ public class FilmCtrl {
 		return new ModelAndView("dettaglio_film", "film", films);
 	}
 	
-	@RequestMapping("/add")
+	@RequestMapping("/films/add")
 	public String formInserimento() {
 		return "addFilm";
 	}
