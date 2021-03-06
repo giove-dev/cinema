@@ -20,7 +20,7 @@
 				<c:out value="${film[i].giorno}" />
 				<c:out value="${film[i].ora}" />
 				<a class = "btn btn-warning" href=/admin/films/update/${film[i].id} >modifica</a>
-				<a class="btn btn-danger" href=/admin/films/delete/${film[i].getId()} >elimina</a>
+				<a class="btn btn-danger" href=/admin/films/delete?id=${film[i].getId()} >elimina</a>
 			</li>
 			
 		</c:forEach>

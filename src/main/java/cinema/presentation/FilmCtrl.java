@@ -75,7 +75,7 @@ public class FilmCtrl {
 	@RequestMapping("/films/delete")
 	private String deleteFilm(@RequestParam("id") int id) {
 		
-		s.deleteById(id);
+		s.deleteFilm(id);
 
 		return "eliminato";
 	}
