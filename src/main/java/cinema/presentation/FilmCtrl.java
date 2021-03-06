@@ -79,4 +79,12 @@ public class FilmCtrl {
 
 		return "eliminato";
 	}
+	
+	@RequestMapping("/sala/{sala}")
+	public ModelAndView filmPerSala(@PathVariable("sala") int sala) {
+		
+		List<Film> films = s.getAllBySala(sala);
+		return new ModelAndView("sala_film", "film", films);
+	}
+	
 }

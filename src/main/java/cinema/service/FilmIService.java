@@ -9,6 +9,7 @@ public interface FilmIService {
 	
 	List<Film> getAll(); 
 	Film getOne(int id); 
+	List<Film> getAllBySala(int sala);
 //	Set<String> getGeneri(); 
 //	List<Film> getGenere(String genere); 
 	Film addOne(Film f);

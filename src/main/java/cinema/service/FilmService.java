@@ -53,6 +53,11 @@ public class FilmService implements FilmIService {
 	}
 	
 	@Override
+	public List<Film> getAllBySala(int sala) {
+		return dao.findBySala(sala);
+	}
+	
+	@Override
 	public void deleteById(int id) {
 		dao.deleteById(id);	
 		

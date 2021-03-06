@@ -9,6 +9,7 @@ import cinema.entities.Film;
 
 public interface FilmDAO extends JpaRepository<Film, Integer> {
 	
-	List<Film> findByGenere(String genere); 
+	List<Film> findByGenere(String genere);
+	List<Film> findBySala(int sala);
 
 }
