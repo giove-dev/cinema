@@ -10,6 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 @Entity
 @Table(name = "film")
 public class Film {
@@ -23,8 +25,10 @@ public class Film {
 	private String descrizione;
 	private int sala;
 	@Column(columnDefinition = "TIME")
+	@DateTimeFormat(iso = DateTimeFormat.ISO.TIME)
 	private LocalTime ora;
 	@Column(columnDefinition = "DATE")
+	@DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
 	private LocalDate giorno;
 	private String link_trailer;
 	private String locandina;

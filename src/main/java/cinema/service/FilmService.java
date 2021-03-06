@@ -55,6 +55,7 @@ public class FilmService implements FilmIService {
 	@Override
 	public void deleteById(int id) {
 		dao.deleteById(id);	
+		
 	}
 	
 	
