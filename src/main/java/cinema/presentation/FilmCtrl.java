@@ -13,14 +13,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import cinema.entities.Film;
-import cinema.service.FilmService;
+import cinema.service.FilmIService;
 
 @Controller
 @RequestMapping("/admin")
 public class FilmCtrl {
 	
 	@Autowired
-	private FilmService s;
+	private FilmIService s;
 	
 	@RequestMapping("/films")
 	public ModelAndView listaFilm() {
@@ -32,7 +32,7 @@ public class FilmCtrl {
 		
 	}
 	
-	@RequestMapping("/dettaglio/{id}")
+	@RequestMapping("/films/dettaglio/{id}")
 	public ModelAndView descrizioniFilm(@PathVariable("id") int id) {
 		
 		List<Film> films = s.getAll();
@@ -44,12 +44,13 @@ public class FilmCtrl {
 		return "addFilm";
 	}
 	
-	@RequestMapping(path = "/addFilm")
+	@RequestMapping(path = "/films/addFilm")
 	public String addFilm(@ModelAttribute("film") Film f) {
 		
 		Film nuovoFilm = s.addOne(f);
 		
-		return "redirect:/admin/dettaglio/"+nuovoFilm.getId();
+		return "redirect:/admin/films/dettaglio/"+nuovoFilm.getId();
+		
 	}
 	
 	
@@ -68,8 +69,9 @@ public class FilmCtrl {
 		
 		Film nuovoFilm = s.update(f);
 		
-		return "redirect:/admin/films/"+ nuovoFilm.getId();
-	
+	//	return "redirect:/admin/films/dettaglio/"+ nuovoFilm.getId();
+	   return "redirect:/admin/films/";
+		
 	}
 	
 	@RequestMapping("/films/delete")

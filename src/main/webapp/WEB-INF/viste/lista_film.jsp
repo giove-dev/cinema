@@ -101,17 +101,18 @@
                 </div>
                 
                 <div class="col-5">
-                    <h3>${film[i].titolo}</h3> 
-                </div>
+                <div>       <h3> <a href="/admin/films/dettaglio/${film[i].getId()}" style="text-decoration: none">${film[i].titolo}</a></h3>
+             
+                </div></div>
                 <div class="col-2">
                     <h3>Sala: ${film[i].sala}</h3> 
                     <h3>Data e Ora:</h3> 
                     <h4>${film[i].giorno}</h4> 
                     <h4>${film[i].ora}</h4> 
+                <a class = "btn btn-primary btn-sm" href=/admin/films/update/${film[i].id} >modifica</a>
+				<a class="btn btn-danger btn-sm" href=/admin/films/delete?id=${film[i].getId()} >elimina</a>
                 </div>
                 
-                <a class = "btn btn-primary btn-sm" href=/admin/films/update/${film[i].id} >modifica</a>
-				<a class="btn btn-secondary btn-sm" href=/admin/films/delete?id=${film[i].getId()} >elimina</a>
                 
                 
              </c:forEach>
