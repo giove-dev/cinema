@@ -35,8 +35,8 @@ public class FilmCtrl {
 	@RequestMapping("/films/dettaglio/{id}")
 	public ModelAndView descrizioniFilm(@PathVariable("id") int id) {
 		
-		List<Film> films = s.getAll();
-		return new ModelAndView("dettaglio_film", "film", films);
+		Film film = s.getOne(id);
+		return new ModelAndView("dettaglio_film", "film", film);
 	}
 	
 	@RequestMapping("/films/add")
