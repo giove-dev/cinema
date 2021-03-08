@@ -62,6 +62,11 @@ public class FilmService implements FilmIService {
 		dao.deleteById(id);	
 		
 	}
+
+	@Override
+	public List<Film> getGenere(String genere) {
+		return dao.findByGenere(genere);
+	}
 	
 	
 }

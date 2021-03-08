@@ -16,13 +16,13 @@ import cinema.entities.Film;
 import cinema.service.FilmIService;
 
 @Controller
-@RequestMapping("/admin")
+@RequestMapping("")
 public class FilmCtrl {
 	
 	@Autowired
 	private FilmIService s;
 	
-	@RequestMapping("/films")
+	@RequestMapping("/admin/films")
 	public ModelAndView listaFilm() {
 		
 		List<Film> films = s.getAll();
@@ -32,19 +32,19 @@ public class FilmCtrl {
 		
 	}
 	
-	@RequestMapping("/films/dettaglio/{id}")
+	@RequestMapping("/admin/films/dettaglio/{id}")
 	public ModelAndView descrizioniFilm(@PathVariable("id") int id) {
 		
 		Film film = s.getOne(id);
 		return new ModelAndView("dettaglio_film", "film", film);
 	}
 	
-	@RequestMapping("/films/add")
+	@RequestMapping("/admin/films/add")
 	public String formInserimento() {
 		return "addFilm";
 	}
 	
-	@RequestMapping(path = "/films/addFilm")
+	@RequestMapping(path = "/admin/films/addFilm")
 	public String addFilm(@ModelAttribute("film") Film f) {
 		
 		Film nuovoFilm = s.addOne(f);
@@ -54,7 +54,7 @@ public class FilmCtrl {
 	}
 	
 	
-	@RequestMapping("/films/update/{id}")
+	@RequestMapping("/admin/films/update/{id}")
 	public ModelAndView formModifica(@PathVariable("id") int id) {
 		
 		Film nuovoFilm = s.getOne(id);
@@ -62,7 +62,7 @@ public class FilmCtrl {
 		return new ModelAndView("update_film", "film",nuovoFilm);
 	}
 	
-	@RequestMapping(path = "/updateFilm/{id}", method = RequestMethod.POST)
+	@RequestMapping(path = "/admin/updateFilm/{id}", method = RequestMethod.POST)
 	public String updateFilm(@PathVariable("id") int id, @Validated @ModelAttribute("film") Film f) {
 		
 		f.setId(id);
@@ -74,7 +74,7 @@ public class FilmCtrl {
 		
 	}
 	
-	@RequestMapping("/films/delete")
+	@RequestMapping("/admin/films/delete")
 	private String deleteFilm(@RequestParam("id") int id) {
 		
 		s.deleteFilm(id);
@@ -82,11 +82,23 @@ public class FilmCtrl {
 		return "eliminato";
 	}
 	
-	@RequestMapping("/sala/{sala}")
+	@RequestMapping("/admin/sala/{sala}")
 	public ModelAndView filmPerSala(@PathVariable("sala") int sala) {
 		
 		List<Film> films = s.getAllBySala(sala);
 		return new ModelAndView("sala_film", "film", films);
+	}
+	
+	@RequestMapping("/home")
+	private ModelAndView home() {
+		List<Film> films = s.getAll();
+		return new ModelAndView("home", "film", films);
+	}
+	
+	@RequestMapping("/generi/{genere}")
+	private ModelAndView generi(@PathVariable("genere") String genere) {
+		List<Film> films = s.getGenere(genere);
+		return new ModelAndView("genere_film", "film", films);
 	}
 	
 }
