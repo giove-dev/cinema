@@ -1,5 +1,7 @@
  <hr>
+                 
                     <div class="footer px-2 py-2 bg-dark">
+            
                         <div class="row align-items-center">
                             <div class="col">
                                 <img src="img/logo.png" alt="logo" width="70%">

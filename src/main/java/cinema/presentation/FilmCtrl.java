@@ -53,11 +53,12 @@ public class FilmCtrl {
 		
 	}
 	
-	
+
 	@RequestMapping("/admin/films/update/{id}")
 	public ModelAndView formModifica(@PathVariable("id") int id) {
 		
 		Film nuovoFilm = s.getOne(id);
+	
 		
 		return new ModelAndView("update_film", "film",nuovoFilm);
 	}
@@ -78,7 +79,7 @@ public class FilmCtrl {
 	private String deleteFilm(@RequestParam("id") int id) {
 		
 		s.deleteFilm(id);
-
+        
 		return "eliminato";
 	}
 	

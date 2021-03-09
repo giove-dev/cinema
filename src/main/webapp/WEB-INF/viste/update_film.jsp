@@ -79,7 +79,7 @@
 			</div>
 			<div class="mb-3">
 				<label for="descrizione" class="form-label">Descrizione</label>
-				<textarea class="form-control" name="descrizione" id="descrizione" rows="3" value="${film.descrizione}"></textarea>
+				<textarea class="form-control" name="descrizione" path="Content" value="" id="descrizione" rows="10" >${film.descrizione} </textarea>
 			</div>
 
 			<div class="row align-items-start">
