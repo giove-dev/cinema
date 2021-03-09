@@ -1,7 +1,7 @@
 
 <%@include file="header.jsp"%>
 
-<h1>Eliminato con successo</h1>
+<h1>Eliminato con successo!!!!</h1>
 
 <script type="text/javascript">
 window.setTimeout(function(){
