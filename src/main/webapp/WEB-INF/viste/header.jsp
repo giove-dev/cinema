@@ -43,7 +43,7 @@
                             </li>
                         </ul>
                         <form class="d-flex">
-                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <input class="form-control me-2" type="search" placeholder="Cerca" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">CERCA</button>
                         </form>
                         <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
