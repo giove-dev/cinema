@@ -4,7 +4,7 @@
             
                         <div class="row align-items-center">
                             <div class="col">
-                                <img src="img/logo.png" alt="logo" width="70%">
+                                <img src="img/logo_1.png" alt="logo" width="70%">
                             </div>
                             <div class="col text-light bg-dark">
                                 CINEMA <br>
@@ -20,9 +20,9 @@
                             </div>
                             <div class="col text-light bg-dark">
                                 CONTATTI <br>
-                                <a class="footer-link" href="#">Indirizzo</a> <br>
-                                <a class="footer-link" href="#">Numero</a> <br>
-                                <a class="footer-link" href="#">Email</a>
+                                <a class="footer-link" href="#">Corso Vittorio Emanuele, 55 (TO) <br>
+                                <a class="footer-link" href="#">0123456789</a> <br>
+                                <a class="footer-link" href="#">info@cinema4040.it</a>
                             </div>
                             <div class="col text-light bg-dark">
                                 FOLLOW US <br>
