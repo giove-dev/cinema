@@ -22,7 +22,7 @@ public class Utente {
 	private LocalDateTime ultimamodifica; 
 	
 	@Id
-//	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 //	@Value(value = "default")
 	private String username;
 	
@@ -103,6 +103,5 @@ public class Utente {
 				+ ", firma=" + firma + ", tipo=" + tipo + ", nome=" + nome + ", cognome=" + cognome + ", nascita="
 				+ nascita + ", email=" + email + ", dataiscrizione=" + dataiscrizione + "]";
 	}
-	
 	
 }
