@@ -51,14 +51,11 @@ public class UtentiCtrl {
 	
 	@RequestMapping(path = "/utenti/addUtente")
 	public String addUtente(@ModelAttribute("utente") Utente u) {
-		
-		
+			
 		Utente nuovoUtente = null; 
 				
 		nuovoUtente = s.addOne(u);
-		
-		
-		
+
 		return "redirect:/admin/utenti";
 		
 

@@ -1,5 +1,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +39,7 @@
                                 <a class="nav-link" href="#">PREZZI</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">CALENDARIO</a>
+                                <a class="nav-link" href="/admin/calendario">CALENDARIO</a>
                             </li>
                         </ul>
                         <form class="d-flex">

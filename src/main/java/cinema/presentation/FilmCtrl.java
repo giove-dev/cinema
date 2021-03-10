@@ -102,4 +102,13 @@ public class FilmCtrl {
 		return new ModelAndView("genere_film", "film", films);
 	}
 	
+	@RequestMapping("/admin/calendario")
+	public ModelAndView calendario() {
+		
+		List<Film> films = s.getAll();
+		
+		return new ModelAndView("calendario", "film", films);
+		
+	}
+	
 }

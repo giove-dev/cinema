@@ -63,7 +63,7 @@
                     </svg>
                 </div>
                 <div class="col-9">
-                    <a href="#" class="text-reset">
+                    <a href="/admin/calendario" class="text-reset">
                         <h4>CALENDARIO</h4>
                     </a>
                 </div>
