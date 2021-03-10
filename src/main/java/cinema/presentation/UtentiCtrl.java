@@ -11,18 +11,23 @@ import cinema.entities.Utente;
 import cinema.service.UtenteIService;
 
 @Controller
-@RequestMapping("/admin")
+@RequestMapping("")
 public class UtentiCtrl {
 	
 	@Autowired
 	private UtenteIService s;
 	
-	@RequestMapping("/utenti")
+	@RequestMapping("/admin/utenti")
 	public ModelAndView listaUtenti() {
 		
 		List<Utente> users = s.getAllUtenti();
 		return new ModelAndView("lista_utenti", "utente", users);
 		
+	}
+	
+	@RequestMapping("/login")
+	public String login() {
+		return "login";
 	}
 	
 }
