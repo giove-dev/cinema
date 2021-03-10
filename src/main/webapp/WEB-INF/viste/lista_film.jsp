@@ -176,7 +176,7 @@
                         
                             <button
                                 type="button"
-                                class="btn-sm btn-danger"
+                                class="btn btn-sm mb-1 btn-danger"
                                 data-bs-toggle="modal"
                                 data-bs-target="#exampleModal"
                                 data-bs-whatever="@mdo">elimina</button>
@@ -203,10 +203,10 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Annulla</button>
-                                   
-                                         <a
+                                       
+                                         <a onclick=""
                                 class="btn btn-outline-danger  mb-1"
-                                href="/admin/films/delete?id=${film[i].getId()}" role="button"> Conferma</a>
+                                role="button"> Conferma</a>
                                    
                                     </div>
                                 </div>
@@ -235,7 +235,7 @@
                     modalTitle.textContent = 'Elimina film'
 
                   //  modalBodyInput.value = recipient
-                })
+               
             </script>
 
             <%@include file="footer.jsp"%>
