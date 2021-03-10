@@ -13,12 +13,14 @@ import cinema.entities.Utente;
 import cinema.service.UtenteIService;
 
 @RestController
+@CrossOrigin
 @RequestMapping("/api")
 public class UtentiRest {
 	
 	@Autowired
 	private UtenteIService s;
 	
+	@CrossOrigin
 	@GetMapping("/utenti")
 	List<Utente> getAll(){
 		return s.getAllUtenti(); 
