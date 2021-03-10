@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -25,9 +26,43 @@ public class UtentiCtrl {
 		
 	}
 	
+
 	@RequestMapping("/login")
 	public String login() {
 		return "login";
 	}
+	
+	@RequestMapping("/utenti/add")
+	public String formInserimento() {
+		return "form_registrati";
+	}
+	
+//	@RequestMapping(path = "/utenti/addUtente")
+//	public ModelAndView addUtente(@ModelAttribute("utente") Utente u) {
+//		
+//		Utente nuovoUtente = s.addOne(u);
+//		nuovoUtente.setTipo("B");
+//		nuovoUtente.setFirma("Utente con diritti minimi");
+//		
+//		return new ModelAndView("form_registrazione", "utente", nuovoUtente);
+//		
+//
+//	}
+	
+	@RequestMapping(path = "/utenti/addUtente")
+	public String addUtente(@ModelAttribute("utente") Utente u) {
+		
+		
+		Utente nuovoUtente = null; 
+				
+		nuovoUtente = s.addOne(u);
+		
+		
+		
+		return "redirect:/admin/utenti";
+		
+
+	}
+	
 	
 }
