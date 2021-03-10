@@ -8,6 +8,7 @@
 	<input type="text" name="email" placeholder="email">
 	<input type="text" name="username" placeholder="username">
 	<input type="text" name="password" placeholder="password">
+	<input type="hidden" name="tipo" value="B">
 	
 	<input type="submit" value="aggiungi utente">
 </form>
