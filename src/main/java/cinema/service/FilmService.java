@@ -68,5 +68,9 @@ public class FilmService implements FilmIService {
 		return dao.findByGenere(genere);
 	}
 	
+	public List<Film> search(String keyword) {
+		return dao.search(keyword);
+	}
+	
 	
 }

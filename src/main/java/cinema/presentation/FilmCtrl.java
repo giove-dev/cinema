@@ -3,8 +3,11 @@ package cinema.presentation;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,13 +17,14 @@ import org.springframework.web.servlet.ModelAndView;
 
 import cinema.entities.Film;
 import cinema.service.FilmIService;
+import cinema.service.FilmService;
 
 @Controller
 @RequestMapping("")
 public class FilmCtrl {
 
 	@Autowired
-	private FilmIService s;
+	private FilmService s;
 
 	@RequestMapping("/admin/films")
 	public ModelAndView listaFilm() {
@@ -107,5 +111,19 @@ public class FilmCtrl {
 	return new ModelAndView("calendario", "film", films);
 	}
 	
+	
+	@RequestMapping("/search")
+//	@GetMapping("/search")
+	public String search(@Param("keyword")String keyword, Model model) {
+		
+		List<Film> searchResult = s.search(keyword);
+//		System.out.println("Keyword: " + keyword);
+		model.addAttribute("keyword", keyword);
+		model.addAttribute("titolo", "Search result for '" + keyword +"'");
+		model.addAttribute("searchResult", searchResult);
+//		System.out.println("Prova: "+ searchResult);
+		return "search_result";
+		
+	}
 	
 }
