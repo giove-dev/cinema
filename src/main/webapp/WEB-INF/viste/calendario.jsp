@@ -1,49 +1,79 @@
-<%@page import="java.time.LocalDate"%>
 <%@include file="header.jsp"%>
 
-<%
-	LocalDate oggi = LocalDate.now();
-%>
+<span>
+	<div class="container">
+		<!-- titolo calendario -->
+		<div class="d-inline-flex p-2 bd-highlight"
+			style="background-color: antiquewhite;">
+			<h1>Calendario</h1>
+		</div>
 
-<table class="table table-bordered">
-	<thead>
-		<tr>
-			<td></td>
-			<th scope="col">Programmazione film</th>
-			<th scope="col">Film in sala oggi</th>
-		</tr>
-	</thead>
-	
-	<c:forEach var="i" begin="0" end="${film.size()-1}">
-		<c:set var="giorno" scope="session" value="${film[i].giorno}" />
-		<c:set var="oggi" scope="session" value="<%=oggi%>" />
+		<!-- Calendario con 2 colonne: 1 col. FILM IN SALA NON SCADUTI, 2 col. FILM ATTUALMENTE IN SALA. -->
+		
+		<table class="table table-success table-bordered">
+			<thead>
+				<tr>
+					<th scope="col">Film in sala oggi</th>
+					<th scope="col">Film in programmazione</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="outputToday"></td>
+					<td id="output"></td>
+				</tr>
+
+			</tbody>
+		</table>
 
 
-		<tbody>
-			<tr>
-				<td><svg xmlns="http://www.w3.org/2000/svg" width="16"
-						height="16" fill="currentColor" class="bi bi-gear"
-						viewBox="0 0 16 16">
-                                    <path
-							d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492zM5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0z" />
-                                    <path
-							d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52l-.094-.319zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115l.094-.319z" />
-                                  </svg></td>
-				<td><c:choose>
-						<c:when test="${giorno > oggi}">
-							<c:out value="${film[i].titolo }" />
-						</c:when>
-					</c:choose></td>
-				<td><c:choose>
-						<c:when test="${giorno == oggi}">
-							<c:out value="${film[i].titolo }" />
-						</c:when>
-					</c:choose></td>
-	</c:forEach>
+	</div>
+</span>
 
-	</tr>
-	</tbody>
-</table>
+
+
+<script type="text/javascript">
+	var today = new Date();
+	var dd = String(today.getDate()).padStart(2, '0');
+	var mm = String(today.getMonth() + 1).padStart(2, '0');
+	var yyyy = today.getFullYear();
+
+	today = yyyy + '-' + mm + '-' + dd;
+
+	var http = new XMLHttpRequest();
+	const url = "http://localhost:9011/api/films";
+	http.open("GET", url, true);
+	http.send();
+	http.onreadystatechange = function() {
+
+		if (this.readyState == 4 && this.status == 200) {
+			console.log(this.readyState);
+			console.log(this.status);
+
+			var myObj = JSON.parse(this.responseText);
+			console.log(myObj);
+			console.log(myObj[2].giorno);
+
+			var t = document.getElementById("outputToday");
+			var x = document.getElementById("output");
+
+			for (var i = 0; i < myObj.length; i++) {
+				if (myObj[i].giorno == today) {
+					t.innerHTML += '<h5><a href="/admin/films/dettaglio/' + myObj[i].id + '"' +
+                        'style="text-decoration: none">'
+							+ myObj[i].titolo + '</a></h5>'+ 
+							'<h6> Sala: ' + myObj[i].sala + '</h6><h6>Ora: ' + myObj[i].ora + '</h6><hr>';
+				} else {
+					x.innerHTML += '<h5><a href="/admin/films/dettaglio/' + myObj[i].id + '"' +
+                    'style="text-decoration: none">'
+					+ myObj[i].titolo + '</a></h5>'+ 
+					'<h6>Data: ' + myObj[i].giorno + '</h6><h6> Sala: ' 
+					+ myObj[i].sala + '; Ora: ' + myObj[i].ora + '</h6><hr>';
+				}
+			}
+		}
+	}
+</script>
 
 
 <%@include file="footer.jsp"%>
