@@ -15,5 +15,6 @@ public interface FilmIService {
 	Film addOne(Film f);
 	Film update(Film f);
 	void deleteFilm(int id);
+	List<Film> search(String keyword);
 
 }
