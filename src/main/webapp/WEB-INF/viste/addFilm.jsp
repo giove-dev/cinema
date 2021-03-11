@@ -92,8 +92,15 @@
 					<input type="text" name="ora" class="form-control" id="ora" aria-describedby="userID">
 				</div>                   
 				<div class="col-2 mb-3">
-				<label for="sala" class="form-label">Sala</label>
-				<input type="text" name="sala" class="form-control" id="sala" aria-describedby="sala">
+				
+<label for="sala" class="form-label">Sala</label>
+<select class="form-select" name ="sala" aria-label="Default select example">
+  <option selected>N°</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="3">4</option>
+</select>
 			</div>
 			</div>
 			<div class="mb-3">
