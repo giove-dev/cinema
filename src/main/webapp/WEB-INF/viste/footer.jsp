@@ -4,7 +4,7 @@
             
                         <div class="row align-items-center">
                             <div class="col">
-                                <img src="/../../resources/img/logo_1.png" alt="logo" width="70%">
+                                <img src="/../../resources/img/logo_1.png" alt="logo" width="180px">
                             </div>
                             <div class="col text-light bg-dark">
                                 CINEMA <br>
