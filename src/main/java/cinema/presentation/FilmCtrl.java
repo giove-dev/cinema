@@ -91,12 +91,7 @@ public class FilmCtrl {
 		return "eliminato";
 	}
 
-	@RequestMapping("/admin/sala/{sala}")
-	public ModelAndView filmPerSala(@PathVariable("sala") int sala) {
-
-		List<Film> films = s.getAllBySala(sala);
-		return new ModelAndView("sala_film", "film", films);
-	}
+	
 
 	@RequestMapping("/home")
 	private ModelAndView home() {
