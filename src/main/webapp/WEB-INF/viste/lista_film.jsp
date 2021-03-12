@@ -25,13 +25,13 @@
                             d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
                     </svg>
                 </div>
-                <div class="col-8 mb-5 mt-3">
+                <div class="col-8 mb-5 mt-3 ">
                     Admin<br>
                         <h3>Nome Cognome</h3>
                         <button type="button" class="btn btn-outline-light">LOGOUT</button>
                     </div>
 
-                    <div class="col-2 mt-5 ms-2">
+                    <div class="col-2 mt-5 ms-3">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
                             width="20"
@@ -50,7 +50,7 @@
                     </a>
                 </div>
 
-                <div class="col-2 ms-2">
+                <div class="col-2 ms-3">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -68,7 +68,7 @@
                     </a>
                 </div>
 
-                <div class="col-2 ms-2">
+                <div class="col-2 ms-3">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -86,7 +86,7 @@
                     </a>
                 </div>
 
-                <div class="col-2 ms-2">
+                <div class="col-2 ms-3">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -104,7 +104,7 @@
                     </a>
                 </div>
 
-                <div class="col-2 ms-2">
+                <div class="col-2 ms-3">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="16"
@@ -126,15 +126,15 @@
             </div>
         </div>
 
-        <c:forEach var="i" begin="0" end="${film.size()-1}">
-            <div class="col 12 .col-sm-9 mt-5">
+    <c:forEach var="i" begin="0" end="${film.size()-1}">
+        <div class="col 12 .col-sm-9 mt-5">
 
 
                 <!-- <button type="button" class="btn btn-primary btn-sm"
                 href=/admin/films/update/${film[i].id}>Modifica</button> <button type="button"
                 class="btn btn-secondary btn-sm"
                 href=/admin/films/delete?id=${film[i].getId()}>Cancella</button>-->
-                <div class="row align-items-start mt-5 mb-5">
+               <div class="row align-items-start mt-5 mb-5">
 
                     <!-- <div class="col-2 ms-5"> <div class="form-check"> <input name="gruppo1"
                     type="radio" id="radio1" checked> <label for="radio1"></label> </div> </div>-->
@@ -221,7 +221,7 @@
                 </div>
 
             </div>
-
+    </div>
             <script>
                 var modalDelete = document.getElementById('exampleModal')
                modalDelete.addEventListener('show.bs.modal', function (event) {

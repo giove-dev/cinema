@@ -1,5 +1,5 @@
  <hr>
- <div class="fixed-bottom gx-0">
+ 
           <div class="footer px-2 py-2 bg-dark" align="center">
             
                         <div class="row align-items-center" >
@@ -36,7 +36,7 @@
                             </div>
                         </div>
                     </div>
- </div>
+ 
                
                 
             
