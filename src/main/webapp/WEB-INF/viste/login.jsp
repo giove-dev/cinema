@@ -24,10 +24,10 @@
         <div class="container  mt-5">
             <div class="row align-items-start ">
                 <div class="col-md-3"></div>
-                <div class="col-12 col-md-6">
-                    <input type="nome" class="form-control" id="nome" aria-describedby="nome">
-                    <input type="password" class="form-control" id="password">
-                    <button type="submit" id="reg" class="btn btn-primary">LOGIN</button>
+                <div class="col-12 col-md-6 mb-5">
+                    <input type="nome" class="form-control mt-5 mb-3" id="nome" aria-describedby="nome" placeholder="nome">
+                    <input type="password" class="form-control mb-3" id="password" placeholder="password">
+                    <button type="submit" id="reg" class="btn btn-primary mb-3">LOGIN</button>
                     <!--   <form>
                   
                         <div class="mb-3">
