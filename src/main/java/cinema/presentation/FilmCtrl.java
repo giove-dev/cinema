@@ -32,6 +32,15 @@ public class FilmCtrl {
 		return new ModelAndView("lista_film", "film", films);
 
 	}
+	
+	@RequestMapping("/catalogo")
+	public ModelAndView catalogo() {
+		
+		List<Film> films = s.getAll();
+		
+		return new ModelAndView("catalogo", "film", films);
+		
+	}
 
 	@RequestMapping("/admin/films/dettaglio/{id}")
 	public ModelAndView descrizioniFilm(@PathVariable("id") int id) {
@@ -101,7 +110,7 @@ public class FilmCtrl {
 		return new ModelAndView("genere_film", "film", films);
 	}
 	
-	@RequestMapping("/admin/calendario")
+	@RequestMapping("/calendario")
 	public ModelAndView calendario() {
 	
 	List<Film> films = s.getAll();

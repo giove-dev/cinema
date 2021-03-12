@@ -1,8 +1,10 @@
-var user = document.getElementById("user").value;
-var film = document.getElementById("film").value;
-
-user = localStorage.getItem("username");
+var btn = document.getElementById("btn");
+var user = document.getElementById("user");
 
 
-console.log(user);
-console.log(film);
+function riempi() {
+    user.value = localStorage.getItem("username");
+    console.log(user);
+}
+
+btn.addEventListener('click', riempi, false);

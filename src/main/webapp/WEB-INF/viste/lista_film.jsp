@@ -63,7 +63,7 @@
                     </svg>
                 </div>
                 <div class="col-9">
-                    <a href="/admin/calendario" class="text-reset">
+                    <a href="/calendario" class="text-reset">
                         <h4>CALENDARIO</h4>
                     </a>
                 </div>
@@ -223,7 +223,7 @@
 
   <!-- </div> -->          
    <!-- </div> -->
-   <script src="/../../resources/js/logout_admin.js"></script>
+   <script src="/../../resources/js/logout.js"></script>
             <script>
                 var modalDelete = document.getElementById('exampleModal')
                modalDelete.addEventListener('show.bs.modal', function (event) {

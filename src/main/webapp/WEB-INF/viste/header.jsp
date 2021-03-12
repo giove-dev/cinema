@@ -26,7 +26,7 @@
                         <a class="nav-link active" aria-current="page" href="/home">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">CATALOGO</a>
+                        <a class="nav-link" href="/catalogo">CATALOGO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/admin/films">ADMIN</a>
@@ -35,7 +35,7 @@
                         <a class="nav-link" href="#">PREZZI</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/admin/calendario">CALENDARIO</a>
+                        <a class="nav-link" href="/calendario">CALENDARIO</a>
                     </li>
                 </ul>
                 <form class="d-flex" action="search" method="get">
@@ -57,7 +57,7 @@
     
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
-    <li><a class="dropdown-item" href="#">Logout</a></li>
+    <li><a class="dropdown-item" id="logout" href="#">Logout</a></li>
     <!--  <li><a class="dropdown-item" href="#">Menu item</a></li>
     <li><a class="dropdown-item" href="#">Menu item</a></li>-->
   </ul>
