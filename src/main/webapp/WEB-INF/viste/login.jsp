@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -25,11 +25,11 @@
             <div class="row align-items-start ">
                 <div class="col-md-3"></div>
                 <div class="col-12 col-md-6">
-                    <form>
-                       <!--   <div class="mb-3">
-                            <label for="Email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="Email" aria-describedby="email">
-                        </div>-->
+                    <input type="nome" class="form-control" id="nome" aria-describedby="nome">
+                    <input type="password" class="form-control" id="password">
+                    <button type="submit" id="reg" class="btn btn-primary">LOGIN</button>
+                    <!--   <form>
+                  
                         <div class="mb-3">
                             <label for="Nome" class="form-label">Username</label>
                             <input type="nome" class="form-control" id="nome" aria-describedby="nome">
@@ -42,8 +42,9 @@
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Ricordami</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">LOGIN</button>
-                    </form>
+                        <button type="submit" id="reg" class="btn btn-primary">LOGIN</button>
+                    </form> -->
+                 
                     <div class="row align-items-start ">
                         <div class="col-md-6">
                             <a class="link" href="#">Password dimenticata?</a>
@@ -56,5 +57,5 @@
                 <div class="col-md-3"></div>
             </div>
         </div>
-        
+        <script src="/../../resources/js/login.js"></script>
         <%@include file="footer.jsp"%>
