@@ -10,6 +10,9 @@
 			width="29%">
 		<p>
 
+                        <a class="btn btn-primary btn-sm mb-1" href="/biglietto/add/${film.id}">Acquista</a>
+
+
 			<dl
 			class="row">
                 <dt class="col-sm-3">Descrizione film</dt>

@@ -9,14 +9,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import cinema.entities.Utente;
-import cinema.service.UtenteIService;
+import cinema.service.UtenteService;
 
 @Controller
 @RequestMapping("")
 public class UtentiCtrl {
 	
 	@Autowired
-	private UtenteIService s;
+	private UtenteService s;
 	
 	@RequestMapping("/admin/utenti")
 	public ModelAndView listaUtenti() {

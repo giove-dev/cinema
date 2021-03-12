@@ -8,21 +8,28 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import cinema.entities.Biglietto;
-import cinema.service.BigliettoIService;
+import cinema.entities.Film;
+import cinema.service.BigliettoService;
+import cinema.service.FilmService;
 
 @Controller
 @RequestMapping("")
 public class BigliettiCtrl {
 	
 	@Autowired
-	BigliettoIService s;
+	BigliettoService s;
+	@Autowired
+	private FilmService fs;
 	
-	@RequestMapping("/biglietto/add")
-	public String formInserimento() {
-		return "addBiglietto";
+	@RequestMapping("/biglietto/add/{id}")
+	public ModelAndView add(@PathVariable("id") int id) {
+
+		Film film = fs.getOne(id);
+		
+		return new ModelAndView("addBiglietto", "film", film);
 	}
 	
-	@RequestMapping(path = "/biglietto/addBiglietto")
+	@RequestMapping(path = "/biglietto/add/addBiglietto")
 	public String addBigl(@ModelAttribute("biglietto") Biglietto b) {
 		
 		Biglietto nuovoB = s.addOne(b);
