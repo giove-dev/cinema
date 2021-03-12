@@ -213,15 +213,16 @@
                             </div>
                         </div>
                     </div>
-
+</div>
+</div>
                     </c:forEach>
 
 
 
                 </div>
 
-            </div>
-    </div>
+  <!-- </div> -->          
+   <!-- </div> -->
             <script>
                 var modalDelete = document.getElementById('exampleModal')
                modalDelete.addEventListener('show.bs.modal', function (event) {
@@ -239,4 +240,4 @@
                
             </script>
 
-            <%@include file="footer.jsp"%>
+<%@include file="footer.jsp"%>
