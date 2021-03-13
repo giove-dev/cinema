@@ -23,7 +23,13 @@ public class FilmCtrl {
 
 	@Autowired
 	private FilmService s;
-
+    
+	@RequestMapping("/admin")
+	public String homeAdmin() {
+		return "adminHome";
+	}
+	
+	
 	@RequestMapping("/admin/films")
 	public ModelAndView listaFilm() {
 
