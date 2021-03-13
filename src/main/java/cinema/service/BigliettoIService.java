@@ -1,12 +1,14 @@
 package cinema.service;
 
+import java.util.List;
+
 import cinema.entities.Biglietto;
 
 public interface BigliettoIService {
 	
 	Biglietto addOne(Biglietto b);
 	Biglietto update(Biglietto b);
-//	List<Film> getAll(); 
+	List<Biglietto> getAll(); 
 	Biglietto getOne(int id); 
 //	List<Film> getAllBySala(int sala);
 //	Set<String> getGeneri(); 

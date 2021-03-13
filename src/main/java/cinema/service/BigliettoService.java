@@ -1,5 +1,7 @@
 package cinema.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -32,6 +34,11 @@ public class BigliettoService implements BigliettoIService{
 	@Override
 	public Biglietto getOne(int id) {
 		return dao.getOne(id);
+	}
+
+	@Override
+	public List<Biglietto> getAll() {
+		return dao.findAll();
 	}
 
 }

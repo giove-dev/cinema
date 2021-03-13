@@ -10,8 +10,8 @@
 	<input type="hidden" id="user" name="utente_username" placeholder="username">
 	<input type="hidden" id="film" name="film_id" placeholder="id film" value="${film.id}">
 	
-
-	<input type="submit" id="btn" value="acquista biglietto">
+	<input type="submit" id="btn" value="acquista biglietto"></input>
+	
 		
 
 
