@@ -14,7 +14,7 @@
             <div class="card-body">
               <h5 class="card-title">Utenti</h5>
               <p class="card-text">Qua puoi gestire la lista utenti.</p>
-              <a href="#" class="btn btn-success">Users</a>
+              <a href="http://localhost:9011/admin/utenti" class="btn btn-success">Users</a>
             </div>
           </div>
     </div>
@@ -29,7 +29,7 @@
             <div class="card-body">
               <h5 class="card-title">Calendario</h5>
               <p class="card-text">Calendario dei film presenti.</p>
-              <a href="#" class="btn btn-success">Programmazione</a>
+              <a href="http://localhost:9011/calendario" class="btn btn-success">Programmazione</a>
             </div>
           </div>
     </div>
@@ -45,7 +45,7 @@
             <div class="card-body">
               <h5 class="card-title">Catalogo</h5>
               <p class="card-text">Puoi gestire i film. </p>
-              <a href="#" class="btn btn-success">Films</a>
+              <a href="http://localhost:9011/admin/films" class="btn btn-success">Films</a>
             </div>
           </div>
     </div>
@@ -64,10 +64,10 @@
               <p class="card-text">Visualizza i film delle varie sale.</p>
             </div>
             <ul class="list-group list-group-flush">
-              <li class="list-group-item">Sala 1</li>
-              <li class="list-group-item">Sala 2</li>
-              <li class="list-group-item">Sala 3 </li>
-              <li class="list-group-item">Sala 4 </li>
+              <li class="list-group-item"><a href="http://localhost:9011/admin/sala/1">Sala 1</a> </li>
+              <li class="list-group-item"><a href="http://localhost:9011/admin/sala/2">Sala 2</a></li>
+              <li class="list-group-item"><a href="http://localhost:9011/admin/sala/3">Sala 3</a></li>
+              <li class="list-group-item"><a href="http://localhost:9011/admin/sala/4">Sala 4</a></li>
             </ul>
       
           </div>
@@ -82,7 +82,7 @@
             <div class="card-body">
               <h5 class="card-title">Aggiungi un film</h5>
               <p class="card-text">Qua puoi aggiungere film al catalogo</p>
-              <a href="#" class="btn btn-success">Add film</a>
+              <a href="http://localhost:9011/admin/films/add" class="btn btn-success">Add film</a>
             </div>
           </div>
      </div>
