@@ -187,5 +187,15 @@
 		<img src="http://placekitten.com/400/600"><br>
 	</div>
 </div>
-
+<script type="text/javascript">
+    var logoutAdmin = document.getElementById("logoutAdmin");
+    logoutAdmin.addEventListener("click", slogga,false);
+    function slogga(){
+        window.setTimeout(function(){
+            window.location.href="http://localhost:9011/home";
+            }, 4);
+    
+            localStorage.clear();
+    }
+    </script>
 <%@include file="footer.jsp"%>

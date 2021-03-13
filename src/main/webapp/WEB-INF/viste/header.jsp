@@ -23,10 +23,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" id="home" aria-current="page" href="/home">HOME</a>
+                        <a class="nav-link active" id="home" aria-current="page" href="">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/catalogo">CATALOGO</a>
+                        <a class="nav-link" id="catalogo" href="">CATALOGO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/admin/films">ADMIN</a>
