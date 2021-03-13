@@ -31,7 +31,7 @@ http.onreadystatechange = function () {
                     else if  (user.value == myObj[i].username && pass.value == myObj[i].password && myObj[i].tipo==="A"){
                        
                         window.setTimeout(function(){
-                            window.location.href="http://localhost:9011/admin/films";
+                            window.location.href="http://localhost:9011/admin";
                             }, 4);
                             localStorage.setItem("Loggato", "A");
                             localStorage.setItem("username", myObj[i].username);

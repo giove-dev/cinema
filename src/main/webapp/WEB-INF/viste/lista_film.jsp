@@ -28,7 +28,7 @@
                 <div class="col-8 mb-5 mt-3 ">
                     Admin<br>
                         <h3>Nome Cognome</h3>
-                        <button type="button" id="logout" class="btn btn-outline-light">LOGOUT</button>
+                        <button type="button" id="logoutAdmin" class="btn btn-outline-light">LOGOUT</button>
                     </div>
 
                     <div class="col-2 mt-5 ms-3">
@@ -223,7 +223,7 @@
 
   <!-- </div> -->          
    <!-- </div> -->
-   <script src="/../../resources/js/logout.js"></script>
+   
             <script>
                 var modalDelete = document.getElementById('exampleModal')
                modalDelete.addEventListener('show.bs.modal', function (event) {
