@@ -4,7 +4,7 @@
 <div class="text-center">
         <div class="alert" role="alert">
             <img src="/../../resources/img/logo_2.png" class="img-fluid" alt="ERRORE" width="10%">
-            <h4 class="alert-heading">Ops,qualcosa � andato storto.</h4>
+            <h4 class="alert-heading">Ops,qualcosa &#279; andato storto.</h4>
             <p>Torna alla pagina HOME</p>
             <hr>
             
