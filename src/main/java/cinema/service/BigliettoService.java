@@ -41,4 +41,9 @@ public class BigliettoService implements BigliettoIService{
 		return dao.findAll();
 	}
 
+	@Override
+	public List<Biglietto> search(String keyword) {
+		return dao.search(keyword);
+	}
+
 }

@@ -1,7 +1,11 @@
 package cinema.presentation;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -77,5 +81,24 @@ public class BigliettiCtrl {
 
 	}
 	
+	@RequestMapping("/biglietti")
+	public String Bigl() {
+				
+		return "biglietti";
+		
+	}
+	
+	@RequestMapping("/biglietti/utente")
+//	@GetMapping("/search")
+	public String search(@Param("keyword")String keyword, Model model) {
+		
+		List<Biglietto> searchResult = s.search(keyword);
+//		System.out.println("Keyword: " + keyword);
+		model.addAttribute("keyword", keyword);
+		model.addAttribute("utente_username", "Search result for '" + keyword +"'");
+		model.addAttribute("searchResult", searchResult);
+//		System.out.println("Prova: "+ searchResult);
+		return "biglietti_utente";
+	}
 
 }

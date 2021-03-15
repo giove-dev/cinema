@@ -9,6 +9,7 @@ public interface BigliettoIService {
 	Biglietto addOne(Biglietto b);
 	Biglietto update(Biglietto b);
 	List<Biglietto> getAll(); 
+	List<Biglietto> search(String keyword);
 	Biglietto getOne(int id); 
 //	List<Film> getAllBySala(int sala);
 //	Set<String> getGeneri(); 
