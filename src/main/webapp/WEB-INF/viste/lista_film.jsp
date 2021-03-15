@@ -157,7 +157,7 @@
                     <div class="col-11 col-sm-6 col-md-5 ms-3 mb-3">
                         <h3>
                             <a
-                            href="/admin/films/dettaglio/${film[i].getId()}"
+                            href="/films/dettaglio/${film[i].getId()}"
                             style="text-decoration: none">${film[i].titolo}</a>
                         </h3>
                     </div>

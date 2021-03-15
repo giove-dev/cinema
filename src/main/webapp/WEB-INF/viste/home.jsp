@@ -27,22 +27,22 @@
 
                     <div class="col-12 col-sm-6 col-md-3 mb-2">
                         <img src="${film[1].locandina}" width="250rem"><br>
-                        <h4> <a href="/admin/films/dettaglio/${film[1].getId()}" style="text-decoration: none">${film[1].titolo}</a></h4>
+                        <h4> <a href="/films/dettaglio/${film[1].getId()}" style="text-decoration: none">${film[1].titolo}</a></h4>
                     </div>
                     
                     <div class="col-12 col-sm-6 col-md-3 mb-2">
                         <img src="${film[4].locandina}" width="250rem"><br>
-                        <h4> <a href="/admin/films/dettaglio/${film[4].getId()}" style="text-decoration: none">${film[4].titolo}</a></h4>
+                        <h4> <a href="/films/dettaglio/${film[4].getId()}" style="text-decoration: none">${film[4].titolo}</a></h4>
                     </div>
                     
                     <div class="col-12 col-sm-6 col-md-3 mb-2">
                         <img src="${film[6].locandina}" width="250rem"><br>
-                        <h4> <a href="/admin/films/dettaglio/${film[6].getId()}" style="text-decoration: none">${film[6].titolo}</a></h4>
+                        <h4> <a href="/films/dettaglio/${film[6].getId()}" style="text-decoration: none">${film[6].titolo}</a></h4>
                     </div>
                     
                     <div class="col-12 col-sm-6 col-md-3 mb-2">
                         <img src="${film[7].locandina}" width="250rem"><br>
-                        <h4> <a href="/admin/films/dettaglio/${film[7].getId()}" style="text-decoration: none">${film[7].titolo}</a></h4>
+                        <h4> <a href="/films/dettaglio/${film[7].getId()}" style="text-decoration: none">${film[7].titolo}</a></h4>
                     </div>
                     
                 </div>

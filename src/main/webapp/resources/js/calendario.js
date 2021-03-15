@@ -25,13 +25,13 @@ http.onreadystatechange = function() {
 
 		for (var i = 0; i < myObj.length; i++) {
 			if (myObj[i].giorno == today) {
-				t.innerHTML += '<li class="cal" style="list-style-type:none;"> <h5><a href="/admin/films/dettaglio/' + myObj[i].id + '"' +
+				t.innerHTML += '<li class="cal" style="list-style-type:none;"> <h5><a href="/films/dettaglio/' + myObj[i].id + '"' +
 				'style="text-decoration: none">'
 				+ myObj[i].titolo + '</a></h5>' +
 				'<h6>Data: ' + myObj[i].giorno + '</h6><h6> Sala: '
 				+ myObj[i].sala + '; Ora: ' + myObj[i].ora + '</h6></li>';
 			} else {
-				x.innerHTML += '<li class="cal" style="list-style-type:none;"> <h5><a href="/admin/films/dettaglio/' + myObj[i].id + '"' +
+				x.innerHTML += '<li class="cal" style="list-style-type:none;"> <h5><a href="/films/dettaglio/' + myObj[i].id + '"' +
 					'style="text-decoration: none">'
 					+ myObj[i].titolo + '</a></h5>' +
 					'<h6>Data: ' + myObj[i].giorno + '</h6><h6> Sala: '

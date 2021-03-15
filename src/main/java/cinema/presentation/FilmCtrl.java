@@ -48,7 +48,7 @@ public class FilmCtrl {
 		
 	}
 
-	@RequestMapping("/admin/films/dettaglio/{id}")
+	@RequestMapping("/films/dettaglio/{id}")
 	public ModelAndView descrizioniFilm(@PathVariable("id") int id) {
 
 		Film film = s.getOne(id);
@@ -65,7 +65,7 @@ public class FilmCtrl {
 
 		Film nuovoFilm = s.addOne(f);
 
-		return "redirect:/admin/films/dettaglio/" + nuovoFilm.getId();
+		return "redirect:/films/dettaglio/" + nuovoFilm.getId();
 
 	}
 
