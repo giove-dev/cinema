@@ -17,9 +17,9 @@
 	</ul>
 	<div class="card-body">
 		<a class="btn btn-primary btn-sm mb-1"
-			href="/biglietto/update/${searchResult[i].film_id}">modifica</a> <a
+			href="/biglietto/update/${searchResult[i].id}">modifica</a> <a
 			class="btn btn-danger btn-sm mb-1"
-			href="/biglietto/delete?id=${searchResult[i].film_id}">elimina </a>
+			href="/biglietto/delete?id=${searchResult[i].id}">elimina </a>
 	</div>
 </div>
 				
