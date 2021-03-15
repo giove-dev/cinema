@@ -137,9 +137,6 @@ public class FilmCtrl {
 	public String workWithUs() {
 		return "work";
 	}
-	@RequestMapping("prezzi")
-	public String prices() {
-		return "price";
-	}
+	
 	
 }

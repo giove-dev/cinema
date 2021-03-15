@@ -31,6 +31,10 @@ public class UtentiCtrl {
 	public String login() {
 		return "login";
 	}
+	@RequestMapping("/prezzi")
+	public String prezzi() {
+		return "prezzi";
+	}
 	
 	@RequestMapping("/utenti/add")
 	public String formInserimento() {

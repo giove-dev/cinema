@@ -14,8 +14,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import cinema.entities.Abbonamento;
 import cinema.entities.Biglietto;
 import cinema.entities.Film;
+import cinema.service.AbbonamentoService;
 import cinema.service.BigliettoService;
 import cinema.service.FilmService;
 
@@ -27,6 +29,9 @@ public class BigliettiCtrl {
 	BigliettoService s;
 	@Autowired
 	private FilmService fs;
+	@Autowired
+	private AbbonamentoService as;
+	
 	
 	@RequestMapping("/biglietto/add/{id}")
 	public ModelAndView add(@PathVariable("id") int id) {
@@ -99,6 +104,33 @@ public class BigliettiCtrl {
 		model.addAttribute("searchResult", searchResult);
 //		System.out.println("Prova: "+ searchResult);
 		return "biglietti_utente";
+	}
+	
+	@RequestMapping("/abbonamento/buy/{id}")
+	public ModelAndView buy(@PathVariable("id") int id) {
+		
+		Film film = fs.getOne(id);
+		
+		return new ModelAndView("buyByAbbonamento", "film", film);
+		
+	}
+
+	@RequestMapping(path = "/abbonamento/buy/addBiglietto")
+	public String buyAbb(@ModelAttribute("biglietto") Biglietto b) {
+
+		Biglietto biglietto = s.addOne(b);
+				
+		List<Abbonamento> abbs = as.getAll();
+		
+		int id=0;
+		
+		for (Abbonamento a : abbs) {
+			id = a.getId();
+		}
+		Abbonamento abb = as.getOne(id);
+
+		return "redirect:/abbonamento/update/"+abb.getId();
+
 	}
 
 }
