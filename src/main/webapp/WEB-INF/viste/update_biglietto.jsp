@@ -9,6 +9,16 @@
 
 	<input type="text" name="film_id" class="form-control" id="film_id"
 		aria-describedby="film_id" value="${biglietto.film_id}">
+		<label for="quantita" class="form-label">Quantità</label>
+<select class="form-select" name ="quantita" aria-label="Default select example">
+  <option selected>Nï¿½</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+</select>
+	<input type="text" id="posto" name="posto" placeholder="posto">
 		 
 		<input
 		type="hidden" name="utente_username" class="form-control"

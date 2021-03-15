@@ -35,6 +35,9 @@
                         <a class="nav-link" href="#">PREZZI</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/biglietti">BIGLIETTI</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/calendario">CALENDARIO</a>
                     </li>
                 </ul>
