@@ -126,8 +126,10 @@
         </div>
 
         
-        <div class="col 12 .col-sm-7 col-md-9 mt-5">
-            <div class="col-12 text-center"><h2>Catalogo Film</h2></div>
+        <div class="col 12 col-sm-7 col-md-9 mt-4">
+           <div class="riga" style="background-color:GAINSBORO;">
+            <h1 class="display-6 text-center">Catalogo Film</h1>
+        </div>
             <div class="row align-items-start mt-5 mb-5">
                 <c:forEach var="i" begin="0" end="${film.size()-1}">
                 <!-- <button type="button" class="btn btn-primary btn-sm"
