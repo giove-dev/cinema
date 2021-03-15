@@ -4,7 +4,7 @@
 <div class="riga">
         <div class="container">
             
-            <div class="row">
+            <div class="row text-center">
                 <span class="border border-secondary mt-5 bg-dark text-light">
                 <div class="col-8 mx-auto mt-2">
                     <p><cite>Il cinema è l'unica forma d'arte che - 

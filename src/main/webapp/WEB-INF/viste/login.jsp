@@ -25,6 +25,9 @@
             <div class="row align-items-start ">
                 <div class="col-md-3"></div>
                 <div class="col-12 col-md-6 mb-5">
+                   <div class="riga" style="background-color:GAINSBORO;margin-top:1rem;margin-bottom:1rem">
+            <h1 class="display-4 text-center">LOGIN</h1>
+        </div>
                    <div class="form-floating">
                     <input type="nome" class="form-control mt-5 mb-3" id="nome" aria-describedby="nome" placeholder="nome">
                     <label for="nome">Username</label> 

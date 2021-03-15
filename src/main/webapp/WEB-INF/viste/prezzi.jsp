@@ -1,5 +1,9 @@
 <%@include file="header.jsp"%>
 
+	<div class="riga" style="background-color:GAINSBORO;margin-top:1rem;margin-bottom:1rem">
+            <h1 class="display-4 text-center">TARIFFE BIGLIETTI</h1>
+        </div>
+        
 <div class="container">
 
 	<div class="col-12">
@@ -7,7 +11,7 @@
 			<strong></strong>
 		</p>
 		<figure class="overlay-wrapper">
-			<img src="img/sala.jpg" class="img-fluid" alt="sala" width="100%"
+			<img src="/../../resources/img/sala.jpg" class="img-fluid" alt="sala" width="100%"
 				style="">
 			<figcaption class="overlay-panel overlay-black">
 				<span></span>
@@ -15,9 +19,6 @@
 		</figure>
 	</div>
 	<!-- titolo calendario -->
-	<div class="d-inline-flex p-2 bd-highlight">
-		<h1>TARIFFE BIGLIETTI</h1>
-	</div>
 
 	<!-- Calendario con 2 colonne: 1 col. FILM IN SALA NON SCADUTI, 2 col. FILM ATTUALMENTE IN SALA. -->
 	<table class="table table-bordered">
