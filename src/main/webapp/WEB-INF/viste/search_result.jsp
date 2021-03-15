@@ -20,7 +20,7 @@
 				<div class="card-body">
 				  <h5 class="card-title"><c:out value="${searchResult[i].titolo}" /></h5>
 				  <p class="card-text">	<c:out value="${searchResult[i].genere}" /></p>
-				  <a  href="/admin/films/dettaglio/${searchResult[i].getId()}" class="btn btn-primary">Dettaglio</a>
+				  <a  href="/films/dettaglio/${searchResult[i].getId()}" class="btn btn-primary">Dettaglio</a>
 				</div>
 			  </div>
 			

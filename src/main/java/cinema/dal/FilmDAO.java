@@ -14,7 +14,7 @@ public interface FilmDAO extends JpaRepository<Film, Integer> {
 	List<Film> findBySala(int sala);
 	
 	
-	//(?1) è la prima keyword. Si può inserire anche la descrizione del film volendo
+	//Si può inserire anche la descrizione del film volendo
 	@Query(value = "SELECT * FROM film WHERE MATCH(titolo, genere) AGAINST (?1)", nativeQuery = true)
 	List<Film> search(String keyword);
 
