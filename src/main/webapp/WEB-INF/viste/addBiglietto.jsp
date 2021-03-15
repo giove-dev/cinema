@@ -7,11 +7,11 @@
 <div class="container">
 
 	<div class="row">
-		<div class="col-3">
+		<div class="col-12 col-sm-6 col-md-3">
 			<img class="img-fluid" src="${film.locandina}" alt=”biglia” style="float: left; margin: 5px" width="100%rem">
 
 		</div>
-       <div class="col-3">
+       	<div class="col-12 col-sm-6 col-md-3">
 		   			<form action="addBiglietto" method="post">
 <!-- 	<input type="hidden" name="id" value="null"> -->
 
@@ -39,23 +39,98 @@
 	<input class="btn btn-success my-4" type="submit" id="btn" value="acquista biglietto"></input>
 
 </form>
-	   </div>
-	   <div class="col-6">
-	
-		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
-		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
-		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
-		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
-		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button> 
-		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
-		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
-		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
-		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
-		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+	   	</div>
+	   	<div class="col-6 col-sm-5 col-md-3">
+			<div class="row row-cols-1">
+
+				<div class="col">
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					
+
+				</div>
+				<div class="col">
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					
+
+				</div>
+				<div class="col">
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					
+
+				</div>
+				<div class="col">
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					
+
+				</div>
+				<div class="col">
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					
+
+				</div>
+			</div>
+		</div>
+		<div class="col-6 col-sm-5 col-md-3">
+			<div class="row row-cols-1">
+
+				<div class="col">
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					
+
+				</div>
+				<div class="col">
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					
+
+				</div>
+				<div class="col">
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					
+
+				</div>
+				<div class="col">
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					
+
+				</div>
+				<div class="col">
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+					
+
+				</div>
+			</div>
+		</div>
 		
-	   
-	
-	</div>
 	</div>
 	
 
