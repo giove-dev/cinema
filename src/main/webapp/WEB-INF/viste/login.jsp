@@ -25,8 +25,16 @@
             <div class="row align-items-start ">
                 <div class="col-md-3"></div>
                 <div class="col-12 col-md-6 mb-5">
+                   <div class="form-floating">
                     <input type="nome" class="form-control mt-5 mb-3" id="nome" aria-describedby="nome" placeholder="nome">
-                    <input type="password" class="form-control mb-3" id="password" placeholder="password">
+                    <label for="nome">Username</label> 
+                   </div>
+                   <div class="form-floating">
+                   <input type="password" class="form-control mb-3" id="password" placeholder="password">
+                   <label for="password">Password</label> 
+                   <input type="checkbox" onclick="show()"> Mostra password
+                </div>
+             
                     <button type="submit" id="reg" class="btn btn-primary mb-3">LOGIN</button>
                     <!--   <form>
                   

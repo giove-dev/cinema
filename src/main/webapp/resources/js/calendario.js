@@ -1,3 +1,4 @@
+
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0');
@@ -24,17 +25,40 @@ http.onreadystatechange = function() {
 
 		for (var i = 0; i < myObj.length; i++) {
 			if (myObj[i].giorno == today) {
-				t.innerHTML += '<h5><a href="/admin/films/dettaglio/' + myObj[i].id + '"' +
-					'style="text-decoration: none">'
-					+ myObj[i].titolo + '</a></h5>' +
-					'<h6> Sala: ' + myObj[i].sala + '</h6><h6>Ora: ' + myObj[i].ora + '</h6><hr>';
+				t.innerHTML += '<li class="cal" style="list-style-type:none;"> <h5><a href="/admin/films/dettaglio/' + myObj[i].id + '"' +
+				'style="text-decoration: none">'
+				+ myObj[i].titolo + '</a></h5>' +
+				'<h6>Data: ' + myObj[i].giorno + '</h6><h6> Sala: '
+				+ myObj[i].sala + '; Ora: ' + myObj[i].ora + '</h6></li>';
 			} else {
-				x.innerHTML += '<h5><a href="/admin/films/dettaglio/' + myObj[i].id + '"' +
+				x.innerHTML += '<li class="cal" style="list-style-type:none;"> <h5><a href="/admin/films/dettaglio/' + myObj[i].id + '"' +
 					'style="text-decoration: none">'
 					+ myObj[i].titolo + '</a></h5>' +
 					'<h6>Data: ' + myObj[i].giorno + '</h6><h6> Sala: '
-					+ myObj[i].sala + '; Ora: ' + myObj[i].ora + '</h6><hr>';
+					+ myObj[i].sala + '; Ora: ' + myObj[i].ora + '</h6></li>';
 			}
 		}
 	}
 }
+var lista = document.getElementsByClassName('cal');
+
+var cerca =  document.getElementById("cerca");
+cerca.addEventListener("change",ricerca,false);
+function ricerca(){
+	for (i = 0; i < lista.length; i++) {
+        //console.log(input.value)
+        console.log(lista)
+
+         testo = lista[i].textContent;
+        console.log(testo)
+        if (testo.indexOf(cerca.value) > -1) {
+            lista[i].style.display = "";
+            console.log(testo.indexOf(cerca.value))
+        } else {
+            lista[i].style.display = "none";
+
+        }
+	}
+
+}
+

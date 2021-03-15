@@ -158,7 +158,7 @@
 				
 <label for="sala" class="form-label">Sala</label>
 <select class="form-select" name ="sala" aria-label="Default select example">
-  <option selected>N�</option>
+  <option selected>N &#778;</option>
   <option value="1">1</option>
   <option value="2">2</option>
   <option value="3">3</option>
