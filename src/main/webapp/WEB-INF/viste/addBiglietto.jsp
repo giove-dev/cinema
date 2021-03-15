@@ -1,32 +1,50 @@
 <%@include file="header.jsp"%>
+<div class="container-fluid">
+<h1><c:out value="${film.titolo}"> </c:out></h1>
 
+</div>
 
-<form action="addBiglietto" method="post">
+<div class="container">
+
+	<div class="row">
+		<div class="col-3">
+			<img class="img-fluid" src="${film.locandina}" alt=”biglia” style="float: left; margin: 5px" width="100%rem">
+
+		</div>
+       <div class="col-9">
+		   			<form action="addBiglietto" method="post">
 <!-- 	<input type="hidden" name="id" value="null"> -->
 
-	<img src="${film.locandina}" alt=”biglia” style="float: left; margin: 5px"
-			width="100rem">
 
-	<label for="quantita" class="form-label">Quantità</label>
-<select class="form-select" name ="quantita" aria-label="Default select example">
-  <option selected>Nï¿½</option>
+<label for="quantita" class="form-label">Quantit&agrave</label>
+<select class="form-select my-3" style="width:7rem" name ="quantita" aria-label="Default select example">
+  <option selected>Numero</option>
   <option value="1">1</option>
   <option value="2">2</option>
   <option value="3">3</option>
   <option value="4">4</option>
   <option value="5">5</option>
 </select>
+
+    
 	<input type="text" id="posto" name="posto" placeholder="posto">
+
+
+
+
+
 	<input type="hidden" id="user" name="utente_username" placeholder="username">
-	<input type="hidden" id="film" name="film_id" placeholder="id film" value="${film.id}">
+	<input type="hidden" id="film" name="film_id" placeholder="id film" value="${film.id}"> <br>
 	
-	<input type="submit" id="btn" value="acquista biglietto"></input>
-
-	
-		
-
+	<input class="btn btn-success my-4" type="submit" id="btn" value="acquista biglietto"></input>
 
 </form>
+	   </div>
+
+	</div>
+
+</div>
+
 
 <script src="/../../resources/js/acquista.js"></script>
 
