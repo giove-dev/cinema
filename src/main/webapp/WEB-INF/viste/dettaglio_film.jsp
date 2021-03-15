@@ -11,7 +11,7 @@
 		<p>
 
                         <a class="btn btn-primary btn-sm mb-1" href="/biglietto/add/${film.id}">Acquista</a>
-                        <a class="btn btn-primary btn-sm mb-1" href="/abbonamento/buy/1">Acquista con abbonamento</a>
+                        <a class="btn btn-primary btn-sm mb-1" href="/abbonamento/buy/${film.id}">Acquista con abbonamento</a>
 
 
 			<dl
