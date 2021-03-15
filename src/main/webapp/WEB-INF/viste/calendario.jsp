@@ -1,10 +1,10 @@
 <%@include file="header_calendario.jsp"%>
 
-<span>
-	<div class="container">
+
+ <div class="container">
 		<!-- titolo calendario -->
 		<div class="d-inline-flex p-2 bd-highlight"
-			style="background-color: antiquewhite;">
+			style="background-color: silver;">
 			<h1>Calendario</h1>
 		</div>
 
@@ -28,7 +28,7 @@
 
 
 	</div>
-</span>
+
 
 
 
