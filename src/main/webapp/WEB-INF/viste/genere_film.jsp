@@ -28,7 +28,7 @@
                 </div>
                 
                 <div class="col-5">
-                <div>       <h3> <a href="/admin/films/dettaglio/${film[i].getId()}" style="text-decoration: none">${film[i].titolo}</a></h3>
+                <div>       <h3> <a href="/films/dettaglio/${film[i].getId()}" style="text-decoration: none">${film[i].titolo}</a></h3>
              
                 </div></div>
                 <div class="col-2">
