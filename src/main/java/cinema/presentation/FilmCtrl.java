@@ -133,5 +133,13 @@ public class FilmCtrl {
 		return "search_result";
 		
 	}
+	@RequestMapping("lavora")
+	public String workWithUs() {
+		return "work";
+	}
+	@RequestMapping("prezzi")
+	public String prices() {
+		return "price";
+	}
 	
 }

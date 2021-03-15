@@ -9,7 +9,7 @@
                                 CINEMA <br>
                                 <a class="footer-link" href="#">Chi siamo</a> <br>
                                 <a class="footer-link" href="#">I nostri cinema</a> <br>
-                                <a class="footer-link" href="#">Lavora con noi</a>
+                                <a class="footer-link" href="http://localhost:9011/lavora">Lavora con noi</a>
                             </div>
                             <div class="col-12 col-sm-6 col-md-3 text-light bg-dark mt-2">
                                 NOTE LEGALI <br>
