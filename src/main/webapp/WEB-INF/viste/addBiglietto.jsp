@@ -11,7 +11,7 @@
 			<img class="img-fluid" src="${film.locandina}" alt=”biglia” style="float: left; margin: 5px" width="100%rem">
 
 		</div>
-       <div class="col-9">
+       <div class="col-3">
 		   			<form action="addBiglietto" method="post">
 <!-- 	<input type="hidden" name="id" value="null"> -->
 
@@ -40,8 +40,24 @@
 
 </form>
 	   </div>
-
+	   <div class="col-6">
+	
+		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button> 
+		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+		<button class="btn btn-primary text-center" style="width:2rem text-center"  type="submit">A1</button>
+		
+	   
+	
 	</div>
+	</div>
+	
 
 </div>
 
