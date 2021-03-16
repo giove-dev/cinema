@@ -160,6 +160,20 @@ public class FilmCtrl {
 		return "search_result";
 		
 	}
+	
+//	@RequestMapping("/search")
+	@GetMapping("admin/search") // dubbio su cosa cambi da Get a Request. Funziona in entrambi i modi per adesso
+	public String searchAdmin(@Param("keyword")String keyword, Model model) {
+		
+		List<Film> searchResult = s.search(keyword);
+//		System.out.println("Keyword: " + keyword); //per visualizzare in console, test
+		model.addAttribute("keyword", keyword);
+		model.addAttribute("titolo", "Search result for '" + keyword +"'");
+		model.addAttribute("searchResult", searchResult);
+//		System.out.println("Prova: "+ searchResult); //per visualizzare in console, test
+		return "search_result";
+		
+	}
 	@RequestMapping("lavora")
 	public String workWithUs() {
 		return "work";
