@@ -218,22 +218,20 @@
             
                 </c:forEach>
             </div>            
-        <div>
-        	Film presenti in catalogo: ${totalItems}, Pagine totali:${totalPages}
-        </div>
+       
 	
-        <div>
-        <h1>Test pagination</h1>
-        	
+ <%--       <div>
+        <h3>Test pagination</h3>
+		<h4>Film presenti in catalogo: ${totalItems}, Pagine totali:${totalPages}</h4>--%> 
     		<%--Per vedere il link precedente eccetto la prima pagina --%>
     		
-    		<c:if test="${currentPage != 1 }">
+  <%--  		<c:if test="${currentPage != 1 }">
     			<a href="http://localhost:9011/admin/films/${currentPage - 1}">Previous</a>
-    		</c:if>
+    		</c:if>--%> 
     		
     		<%--Per vedere i numeri delle pagine. Il when serve per disabilitare il link della pagina corrente--%>
     		
-    		<c:forEach begin="1" end="${totalPages}" var="i">
+  <%--  		<c:forEach begin="1" end="${totalPages}" var="i">
                 <c:choose>
                     <c:when test="${currentPage eq i}">
                         <td>${i}</td>
@@ -242,14 +240,40 @@
                         <td><a href="http://localhost:9011/admin/films/${i}">${i}</a></td>
                     </c:otherwise>
                 </c:choose>
-            </c:forEach>
+            </c:forEach>--%> 
     		
     		<%--Per visualizzare il prossimo link --%>
-    <c:if test="${currentPage lt totalPages}">
+<%--    <c:if test="${currentPage lt totalPages}">
         <td><a href="http://localhost:9011/admin/films/${currentPage + 1}">Next</a></td>
     </c:if>
-        </div>
+        </div> --%>
     </div>
+    
+    <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <c:if test="${currentPage != 1 }">
+	<li class="page-item disabled">
+      <a class="page-link" href="http://localhost:9011/admin/films/${currentPage - 1}" tabindex="-1" aria-disabled="true">Previous</a>
+    </li>
+    </c:if>
+    <c:forEach begin="1" end="${totalPages}" var="i">
+                <c:choose>
+                    <c:when test="${currentPage eq i}">                      
+                         <li class="page-item"><a class="page-link">${i}</a></li>
+                    </c:when>
+                    <c:otherwise>
+                  		<li class="page-item"><a class="page-link" href="http://localhost:9011/admin/films/${i}">${i}</a></li>
+                    </c:otherwise>
+                </c:choose>
+            </c:forEach>
+    
+    <c:if test="${currentPage lt totalPages}">
+    <li class="page-item">
+      <a class="page-link" href="http://localhost:9011/admin/films/${currentPage + 1}">Next</a>  
+    </li>
+  </c:if>
+  </ul>
+</nav>
 
             <script>
         
