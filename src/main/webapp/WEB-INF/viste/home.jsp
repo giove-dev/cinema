@@ -114,55 +114,8 @@
 </div>
 
 
-<script
-	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-	integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-	crossorigin="anonymous">
-	
-</script>
-<script type="text/javascript">
-	var http = new XMLHttpRequest();
-	var c1 = document.getElementById("c1");
-	var c2 = document.getElementById("c2");
-	var c3 = document.getElementById("c3");
 
-	const url = "http://localhost:9011/api/films";
-	http.open("GET", url, true);
-	http.send();
 
-	http.onreadystatechange = function() {
 
-		if (this.readyState == 4 && this.status == 200) {
-			console.log(this.readyState);
-			console.log(this.status);
-
-			var myObj = JSON.parse(this.responseText);
-			console.log(myObj)
-			for (var i = 0; i < 4; i++) {
-
-				c1.innerHTML += '<a href="/films/dettaglio/'
-						+ myObj[i].id
-						+ '"</a><img src="' + myObj[i]
-                    .locandina +
-                    '" class="img-fluid" alt="...">';
-			}
-			for (var i = 4; i < 8; i++) {
-
-				c2.innerHTML += '<a href="/films/dettaglio/'
-						+ myObj[i].id
-						+ '"</a><img src="' + myObj[i]
-                    .locandina +
-                    '" class="img-fluid" alt="...">';
-			}
-			for (var i = 8; i < 12; i++) {
-
-				c3.innerHTML += '<a href="/films/dettaglio/'
-						+ myObj[i].id
-						+ '"</a><img src="' + myObj[i]
-                    .locandina +
-                    '" class="img-fluid" alt="...">';
-			}
-		}
-	}
-</script>
+ <script src="/../../resources/js/carousel.js"></script>
 <%@include file="footer.jsp"%>

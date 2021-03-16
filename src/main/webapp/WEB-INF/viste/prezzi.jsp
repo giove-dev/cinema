@@ -25,7 +25,7 @@
 		<thead>
 			<tr>
 				<th scope="col">SPETTACOLI</th>
-				<th scope="col">DAL LUNEDì AL VENERDì</th>
+				<th scope="col">DAL LUNED&Igrave; AL VENERD&Igrave;</th>
 				<th scope="col">SABATO E DOMENICA <br> FESTIVI E
 					PRE-FESTIVI
 				</th>
@@ -36,8 +36,8 @@
 		<tbody>
 			<tr>
 				<td><b> INTERO </b></td>
-				<td>4,90€</td>
-				<td>7,90€</td>
+				<td>4,90&euro;</td>
+				<td>7,90&euro;</td>
 				<th scope="row">
 					<button type="button" class="btn btn-secondary btn-xs">scegli</button>
 
@@ -46,8 +46,8 @@
 			</tr>
 			<tr>
 				<td><b>ABBONAMENTO</b><br> 5/10 entrate</td>
-				<td>///€</td>
-				<td>///€</td>
+				<td>///	&euro;</td>
+				<td>///	&euro;</td>
 				<th scope="row"><a href="/abbonamento/add" class="text-reset">
 						<h4>Acquista</h4>
 				</a></th>

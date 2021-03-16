@@ -4,9 +4,9 @@
 <div class="container">
 	<div class="row align-items-start ">
 		<div class="col-11 col-sm-11 col-md-6 my-3">
-<form class="d-flex" action="/biglietti/utente" method="post">
+<form id="tickets" class="d-flex" action="/biglietti/utente" method="post">
                     <input id="param" class="form-control me-2" type="hidden" name="keyword" placeholder="Ricerca..." aria-label="Search" width="30%">
-                    <button class="btn btn-outline-success" type="submit" value="Search">I MIEI BIGLIETTI</button>
+                    <button id="letsgo" class="btn btn-outline-success" idtype="submit" style="display: none;" value="Search">I MIEI BIGLIETTI</button>
                 </form>
         </div>
     </div>
@@ -14,11 +14,20 @@
  
 <script type="text/javascript">
 
-var param = document.getElementById('param');
+
+    var param = document.getElementById('param');
 
 param.value = localStorage.getItem('username');
 console.log(param);
 
+document.addEventListener('DOMContentLoaded',submit,false);
+function submit() {
+        document.getElementById("letsgo").click(); // Simulates button click
+        document.tickets.submit(); // Submits the form without the button
+    }
+window.setTimeout(function(){
+    window.location.href="http://localhost:9011/biglietti/utente/";
+    }, 100);
 </script>
  
 <div class="fixed-bottom">

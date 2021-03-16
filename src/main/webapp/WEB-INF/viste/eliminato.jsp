@@ -312,4 +312,8 @@ window.setTimeout(function(){
     window.location.href="http://localhost:9011/admin/films/";
     }, 4000);
 </script>
-<%@include file="footer.jsp"%>
+
+<div class="fixed-bottom">
+  <%@include file="footer.jsp"%>
+</div>
+
