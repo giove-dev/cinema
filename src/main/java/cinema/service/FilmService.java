@@ -3,6 +3,9 @@ package cinema.service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import cinema.dal.FilmDAO;
@@ -13,10 +16,20 @@ public class FilmService implements FilmIService {
 
 	@Autowired 
 	private FilmDAO dao;
+	
+	@Override
+	public Page<Film> getAllPaged(int pageNum) {
+		
+		//valore dei film per pagina
+		int pageSize = 5;
+		
+		Pageable pageable = PageRequest.of(pageNum - 1, pageSize);		
+		return dao.findAll(pageable);
+	}
+	
 	@Override
 	public List<Film> getAll() {
 		// TODO Auto-generated method stub
-		
 		return dao.findAll();
 	}
 
@@ -71,6 +84,8 @@ public class FilmService implements FilmIService {
 	public List<Film> search(String keyword) {
 		return dao.search(keyword);
 	}
+
+	
 	
 	
 }
