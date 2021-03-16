@@ -118,7 +118,7 @@
                 </div>
             </div>
         </div>
-	<div class="col-12 col-sm-6 col-md-5 ms-2 mt-5 mb-5"> 
+	<div class="col-11 col-sm-6 col-md-5 ms-2 mt-5 mb-5"> 
 		<form action="addFilm" method="post">
 			<h2>AGGIUNGI FILM</h2>
 			<div class="row align-items-start">
@@ -177,6 +177,8 @@
 			<button type="submit" class="btn btn-primary">AGGIUNGI</button>
 		  </form>
 	</div>
+	
+	
 	<div class="col-12 col-sm-12 col-md-3 mt-5 mb-5">
 		<img src="http://placekitten.com/400/600"><br>
 	</div>
