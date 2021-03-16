@@ -2,17 +2,20 @@
 <%@include file="header.jsp"%>
 
 <div class="container-fluid">
-	<div class="d-inline-flex p-2 bd-highlight">
-		<h1>${film.titolo }</h1>
-	</div>
+  <div class="row">
+	  <div class="col-12 col-sm-8 align-self-start p-2 bd-highlight ">
+		  <h1>${film.titolo }</h1>
+    </div>
+    <div class="col-12 col-sm-4 align-self-end mt-5 ">
+      <a class="btn btn-primary btn-sm mb-1" href="/biglietto/add/${film.id}">Acquista</a>
+      <a class="btn btn-primary btn-sm mb-1" href="/abbonamento/buy/${film.id}">Acquista con abbonamento</a>
+	  </div>
+    
+  </div>
 	<div style="border: 1px solid rgba(0, 0, 0, 0.158)">
 		<img src="${film.locandina }" alt=”biglia” style="float: left; margin: 5px"
 			width="29%">
 		<p>
-
-                        <a class="btn btn-primary btn-sm mb-1" href="/biglietto/add/${film.id}">Acquista</a>
-                        <a class="btn btn-primary btn-sm mb-1" href="/abbonamento/buy/${film.id}">Acquista con abbonamento</a>
-
 
 			<dl
 			class="row">

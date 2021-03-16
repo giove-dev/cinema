@@ -1,5 +1,9 @@
 <%@include file="header.jsp"%>
 
+           <div class="riga" style="background-color:GAINSBORO;margin-top:1rem;margin-bottom:1rem">
+            <h1 class="display-6 text-center">Catalogo Film</h1>
+        </div>
+
     <c:forEach var="i" begin="0" end="${film.size()-1}">
         <div class="col 12 .col-sm-9 mt-5">
 

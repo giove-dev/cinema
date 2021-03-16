@@ -2,3 +2,41 @@
 *{
 	font-family: 'Lora', serif;
 }
+
+.banner img{
+    max-height: 20rem;
+    padding: 0.5rem;
+    width: 20%;
+}
+.banner{
+    max-width: 100%;
+    max-height: 25%;
+}
+.carousel-control-prev{
+    max-height: 22rem;
+    text-align: center;
+}
+.carousel-control-next{
+    max-height: 22rem;
+    text-align: center;
+}
+@media only screen and (max-width: 640px){
+    .carousel-control-prev{
+        max-height: 15%;
+        text-align: center;
+    }
+    .carousel-control-next{
+        max-height: 15%;
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 640px) and (max-width: 1024px){
+    .carousel-control-prev{
+        max-height: 30%;
+        text-align: center;
+    }
+    .carousel-control-next{
+        max-height: 30%;
+        text-align: center;
+    }
+}
