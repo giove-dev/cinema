@@ -2,6 +2,7 @@ package cinema.service;
 
 import java.util.List;
 
+import org.springframework.data.domain.Page;
 
 import cinema.entities.Film;
 
@@ -16,5 +17,7 @@ public interface FilmIService {
 	Film update(Film f);
 	void deleteFilm(int id);
 	List<Film> search(String keyword);
+	Page<Film> getAllPaged(int pageNum);
+	
 
 }

@@ -3,10 +3,12 @@ package cinema.presentation;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -29,20 +31,47 @@ public class FilmCtrl {
 		return "adminHome";
 	}
 	
-	
 	@RequestMapping("/admin/films")
-	public ModelAndView listaFilm() {
-
-		List<Film> films = s.getAll();
-
+	public ModelAndView viewAdminFilmsHomePage(Model model) {
+	    return listaFilmPaged(model, 1);
+	}
+	
+	@RequestMapping("/admin/films/{pageNum}")
+	public ModelAndView listaFilmPaged(Model model, @PathVariable(name = "pageNum") int pageNum) {
+		
+		Page<Film> page = s.getAllPaged(pageNum);
+	
+		List<Film> films = page.getContent();
+		
+		model.addAttribute("currentPage", pageNum);
+		//prende il numero di pagine presenti in base a quanti items vuoi visualizzare (5) per pagina e quanti items ci sono
+	    model.addAttribute("totalPages", page.getTotalPages());
+	    //prende il numero di quanti film (items) ci sono
+	    model.addAttribute("totalItems", page.getTotalElements());
+	    model.addAttribute("listProducts", films);
+	    
 		return new ModelAndView("lista_film", "film", films);
-
+		
 	}
 	
 	@RequestMapping("/catalogo")
-	public ModelAndView catalogo() {
+	public ModelAndView viewCatalogo(Model model) {
+	    return catalogoPaged(model, 1);
+	}
 		
-		List<Film> films = s.getAll();
+	@RequestMapping("/catalogo/{pageNum}")
+	public ModelAndView catalogoPaged(Model model, @PathVariable(name = "pageNum") int pageNum) {
+		
+		Page<Film> page = s.getAllPaged(pageNum);
+	
+		List<Film> films = page.getContent();
+		
+		model.addAttribute("currentPage", pageNum);
+		//prende il numero di pagine presenti in base a quanti items vuoi visualizzare (5) per pagina e quanti items ci sono
+	    model.addAttribute("totalPages", page.getTotalPages());
+	    //prende il numero di quanti film (items) ci sono
+	    model.addAttribute("totalItems", page.getTotalElements());
+	    model.addAttribute("listProducts", films);
 		
 		return new ModelAndView("catalogo", "film", films);
 		
@@ -97,8 +126,6 @@ public class FilmCtrl {
 		return "eliminato";
 	}
 
-	
-
 	@RequestMapping("/home")
 	private ModelAndView home() {
 		List<Film> films = s.getAll();
@@ -120,16 +147,16 @@ public class FilmCtrl {
 	}
 	
 	
-	@RequestMapping("/search")
-//	@GetMapping("/search")
+//	@RequestMapping("/search")
+	@GetMapping("/search") // dubbio su cosa cambi da Get a Request. Funziona in entrambi i modi per adesso
 	public String search(@Param("keyword")String keyword, Model model) {
 		
 		List<Film> searchResult = s.search(keyword);
-//		System.out.println("Keyword: " + keyword);
+//		System.out.println("Keyword: " + keyword); //per visualizzare in console, test
 		model.addAttribute("keyword", keyword);
 		model.addAttribute("titolo", "Search result for '" + keyword +"'");
 		model.addAttribute("searchResult", searchResult);
-//		System.out.println("Prova: "+ searchResult);
+//		System.out.println("Prova: "+ searchResult); //per visualizzare in console, test
 		return "search_result";
 		
 	}

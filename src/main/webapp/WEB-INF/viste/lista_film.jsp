@@ -216,14 +216,38 @@
             
                 </c:forEach>
             </div>            
-        
+        <div>
+        	Film presenti in catalogo: ${totalItems}, Pagine totali:${totalPages}
+        </div>
+	
+        <div>
+        <h1>Test pagination</h1>
+        	
+    		<%--Per vedere il link precedente eccetto la prima pagina --%>
+    		
+    		<c:if test="${currentPage != 1 }">
+    			<a href="http://localhost:9011/admin/films/${currentPage - 1}">Previous</a>
+    		</c:if>
+    		
+    		<%--Per vedere i numeri delle pagine. Il when serve per disabilitare il link della pagina corrente--%>
+    		
+    		<c:forEach begin="1" end="${totalPages}" var="i">
+                <c:choose>
+                    <c:when test="${currentPage eq i}">
+                        <td>${i}</td>
+                    </c:when>
+                    <c:otherwise>
+                        <td><a href="http://localhost:9011/admin/films/${i}">${i}</a></td>
+                    </c:otherwise>
+                </c:choose>
+            </c:forEach>
+    		
+    		<%--Per visualizzare il prossimo link --%>
+    <c:if test="${currentPage lt totalPages}">
+        <td><a href="http://localhost:9011/admin/films/${currentPage + 1}">Next</a></td>
+    </c:if>
         </div>
     </div>
-
-
-                
-
-   
 
             <script>
         
