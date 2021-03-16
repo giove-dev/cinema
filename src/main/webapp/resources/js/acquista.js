@@ -2,13 +2,17 @@ var btn = document.getElementById("btn");
 var user = document.getElementById("user");
 var pulsanti = document.getElementsByClassName('btn btn-outline-primary');
 
+var quant = document.getElementById("quant");
+
 var posto = document.getElementById("posto");
 function riempi() {
     user.value = localStorage.getItem("username");
     console.log(user);
+    localStorage.setItem("quantita", quant.value);
 }
 
 btn.addEventListener('click', riempi, false);
+
 
 
 
@@ -55,7 +59,6 @@ http.onreadystatechange = function () {
               } 
               
             }
-
      
 }
 
