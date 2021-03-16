@@ -1,6 +1,6 @@
 var btn = document.getElementById("btn");
 var user = document.getElementById("user");
-var pulsanti = document.getElementsByTagName('button');
+var pulsanti = document.getElementsByClassName('btn btn-outline-primary');
 
 var posto = document.getElementById("posto");
 function riempi() {
@@ -34,23 +34,25 @@ http.onreadystatechange = function () {
 
         var myObj = JSON.parse(this.responseText);
         
-        //console.log(myObj)
+        console.log(myObj)
         for (var i = 0; i < myObj.length; i++) {
             var seat = myObj[i].posto;
-            for (var i=0 ; i < pulsanti.length ; i++){
+           
                // var seat = myObj[i].posto;
-            
+            for (var j = 0; j <pulsanti.length;j++){
+
+           
        
                  console.log(seat)
-                  // console.log(pulsanti[i].value)
-                   var valPulsanti = pulsanti[i].value
+                  console.log(pulsanti[j].value)
+              
              
-                 if(valPulsanti==seat){
-                 pulsanti[i].setAttribute("class","btn btn-danger disabled")
+                if(pulsanti[j].value==seat){
+                 pulsanti[j].setAttribute("class","btn btn-danger disabled")
                  console.log(seat + " questo coincide")
                 }
                 
-              }
+              } 
               
             }
 
