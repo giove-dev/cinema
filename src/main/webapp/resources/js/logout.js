@@ -1,10 +1,12 @@
 var logout = document.getElementById("logout");
 var home = document.getElementById("home");
 var catalogo =document.getElementById("catalogo");
+var logoutAdmin = document.getElementById("logoutAdmin");
 
 logout.addEventListener("click", slogga,false);
 home.addEventListener("click", diffHome,false);
 catalogo.addEventListener("click",diffCatalogo,false);
+logoutAdmin.addEventListener("click",slogga,false);
 
 function slogga(){
     window.setTimeout(function(){

@@ -165,23 +165,6 @@
 
               
 
- 
-          <script>
-              var modalDelete = document.getElementById('exampleModal')
-             modalDelete.addEventListener('show.bs.modal', function (event) {
-
-                  var button = event.relatedTarget
-
-                //  var recipient = button.getAttribute('data-bs-whatever')
-
-                  var modalTitle = exampleModal.querySelector('.modal-title')
-                  var modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-                  modalTitle.textContent = 'Elimina film'
-
-                //  modalBodyInput.value = recipient
-             });
-          </script>
 
 <%@include file="footer.jsp"%>
 
