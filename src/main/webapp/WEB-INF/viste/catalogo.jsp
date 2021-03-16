@@ -1,6 +1,6 @@
 <%@include file="header.jsp"%>
 
-           <div class="riga" style="background-color:GAINSBORO;">
+           <div class="riga" style="background-color:GAINSBORO;margin-top:1rem;margin-bottom:1rem">
             <h1 class="display-6 text-center">Catalogo Film</h1>
         </div>
 
