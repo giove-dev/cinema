@@ -19,7 +19,7 @@
             <p>Torna alla pagina HOME</p>
             <hr>
             
-            <a class="btn btn-dark" id="backHome" href="">HOME</a>
+            <a class="btn btn-dark" href="http://localhost:9011/home">HOME</a>
         </div>
     </div>
 </c:if>
