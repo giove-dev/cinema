@@ -219,7 +219,7 @@
     <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
     <c:if test="${currentPage != 1 }">
-	<li class="page-item disabled">
+	<li class="page-item">
       <a class="page-link" href="http://localhost:9011/admin/films/${currentPage - 1}" tabindex="-1" aria-disabled="true">Previous</a>
     </li>
     </c:if>
