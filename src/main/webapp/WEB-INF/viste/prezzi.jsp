@@ -41,29 +41,30 @@
 				<td>4,90&euro;</td>
 				<td>7,90&euro;</td>
 				<th scope="row">
-					<button type="button" class="btn btn-secondary btn-xs">scegli</button>
-
+				
+                    <a class="btn btn-success btn-xs" href="http://localhost:9011/catalogo" role="button">Compra</a>
 				</th>
 
 			</tr>
-			<tr>
-				<td><b>ABBONAMENTO</b><br> 5/10 entrate</td>
-				<td>///	&euro;</td>
-				<td>///	&euro;</td>
-				<th scope="row"><a href="/abbonamento/add" class="text-reset">
-						<h4>Acquista</h4>
-				</a></th>
-
-			</tr>
+		
 
 		</tbody>
 	</table>
 
 	<div class="float-left">
-		<p>
-			<b>INTERO</b>:............. <br> <b>ABBONAMENTO</b>: 5/10
-			entrate in un mese.
-		</p>
+		<div class="card" style="width: 23rem;">
+			<div class="card-body">
+			  <h5 class="card-title">Abbonamento       <span class="badge bg-info text-dark">   HOT <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+				<path d="M8 0l1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864 8 0z"/>
+				<path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1 4 11.794z"/>
+			  </svg>   </span></h5>
+			  <h6 class="card-subtitle mb-2 text-muted">5/10 ingressi</h6>
+			  <p class="card-text">Compra un abbonamento e risparmia!</p>
+			  <a class="btn btn-success btn-xs" href="/abbonamento/add" role="button">Acquista</a>
+			 
+			</div>
+		  </div>
+		
 	</div>
 	<br>
 
