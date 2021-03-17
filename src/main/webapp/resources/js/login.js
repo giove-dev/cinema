@@ -6,7 +6,8 @@ http.send();
 var user = document.getElementById("nome");
 var pass = document.getElementById("password");
 var reg = document.getElementById("reg");
-
+var dark = document.getElementById("darkmode");
+dark.addEventListener("click",buio,false);
 
 http.onreadystatechange = function () {
     
@@ -58,3 +59,9 @@ function show() {
       x.type = "password";
     }
   }
+
+
+  function buio(){
+    var sfondo = document.body;
+    sfondo.classList.toggle("dark")
+   }

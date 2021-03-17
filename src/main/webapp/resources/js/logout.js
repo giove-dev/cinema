@@ -9,7 +9,8 @@ home.addEventListener("click", diffHome,false);
 catalogo.addEventListener("click",diffCatalogo,false);
 var eventi= document.getElementById("eventi");
 eventi.addEventListener("click",diffCalendar,false);
-
+var dark = document.getElementById("darkmode");
+dark.addEventListener("click",buio,false);
 try {
    logoutAdmin.addEventListener("click",slogga,false); 
 } catch (error) {
@@ -89,4 +90,9 @@ function diffCalendar(){
             }, 4);
     }
     
+}
+
+function buio(){
+ var sfondo = document.body;
+ sfondo.classList.toggle("dark")
 }
