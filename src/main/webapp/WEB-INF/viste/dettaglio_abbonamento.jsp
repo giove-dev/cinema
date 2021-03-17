@@ -4,9 +4,7 @@
 	<div class="d-flex  justify-content-center">
 			<div class="card my-5" style="width: 18rem;">
 	<div class="card-body">
-		<h5 class="card-title">Biglietto</h5>
-<div id="img">
-</div>
+		<h5 class="card-title">Abbonamento</h5>
 	</div>
 	<ul class="list-group list-group-flush">
 		<li class="list-group-item">ID ABBONAMENTO: ${abbonamento.id }</li>

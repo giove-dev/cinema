@@ -1,7 +1,11 @@
 package cinema.presentation;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,9 +15,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import cinema.entities.Abbonamento;
-import cinema.entities.Film;
+import cinema.entities.Biglietto;
 import cinema.service.AbbonamentoService;
-import cinema.service.BigliettoService;
 
 @Controller
 @RequestMapping("")
@@ -21,6 +24,26 @@ public class AbbonamentoCtrl {
 	
 	@Autowired
 	AbbonamentoService s;
+	
+	@RequestMapping("/abbonamenti")
+	public String abbonamenti() {
+				
+		return "abbonamenti";
+		
+	}
+	
+	@RequestMapping("/abbonamenti/utente")
+//	@GetMapping("/search")
+	public String search(@Param("keyword")String keyword, Model model) {
+		
+		List<Abbonamento> searchResult = s.search(keyword);
+//		System.out.println("Keyword: " + keyword);
+		model.addAttribute("keyword", keyword);
+		model.addAttribute("utente_username", "Search result for '" + keyword +"'");
+		model.addAttribute("searchResult", searchResult);
+//		System.out.println("Prova: "+ searchResult);
+		return "abbonamenti_utente";
+	}
 	
 	@RequestMapping("/abbonamento/add")
 	public String formInserimento() {

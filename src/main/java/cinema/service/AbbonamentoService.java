@@ -41,4 +41,9 @@ public class AbbonamentoService implements AbbonamentoIService {
 		return dao.findAll();
 	}
 
+	@Override
+	public List<Abbonamento> search(String keyword) {
+		return dao.search(keyword);
+	}
+
 }
