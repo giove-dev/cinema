@@ -172,26 +172,27 @@
 			</div>
 			<div class="mb-3">
 				<label for="locandina" class="form-label">Link locandina</label>
-				<input type="text" name="locandina" class="form-control" id="locandina" aria-describedby="link">
+				<input type="text" id="takeThis" name="locandina" class="form-control" id="locandina" aria-describedby="link">
 			</div>
 			<button type="submit" class="btn btn-primary">AGGIUNGI</button>
 		  </form>
 	</div>
 	
 	
-	<div class="col-12 col-sm-12 col-md-3 mt-5 mb-5">
-		<img src="http://placekitten.com/400/600"><br>
+	<div class="col-12 col-sm-12 col-md-3 mt-5 mb-5"  >
+		<img id="toChange"  src="http://placekitten.com/400/600"><br>
 	</div>
 </div>
 <script type="text/javascript">
-    var logoutAdmin = document.getElementById("logoutAdmin");
-    logoutAdmin.addEventListener("click", slogga,false);
-    function slogga(){
-        window.setTimeout(function(){
-            window.location.href="http://localhost:9011/home";
-            }, 4);
-    
-            localStorage.clear();
+
+ var imgChange = document.getElementById("toChange");
+    var take = document.getElementById("takeThis");
+
+    take.addEventListener("change",changeSource,false);
+
+    function changeSource(){
+        imgChange.src= take.value;
     }
+
     </script>
 <%@include file="footer.jsp"%>

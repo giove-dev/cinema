@@ -1,7 +1,9 @@
 <%@include file="header.jsp"%>
 
            <div class="riga" style="background-color:GAINSBORO;margin-top:1rem;margin-bottom:1rem">
-            <h1 class="display-6 text-center">Catalogo Film</h1>
+            <h1 class="display-6 text-center"><svg xmlns="http://www.w3.org/2000/svg" style="background-color:GAINSBORO;margin-top:1rem;margin-bottom:1.5rem"  width="40" height="40" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
+                <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm4 0v6h8V1H4zm8 8H4v6h8V9zM1 1v2h2V1H1zm2 3H1v2h2V4zM1 7v2h2V7H1zm2 3H1v2h2v-2zm-2 3v2h2v-2H1zM15 1h-2v2h2V1zm-2 3v2h2V4h-2zm2 3h-2v2h2V7zm-2 3v2h2v-2h-2zm2 3h-2v2h2v-2z"/>
+              </svg>  Catalogo Film</h1>
         </div>
 
     <c:forEach var="i" begin="0" end="${film.size()-1}">
@@ -127,21 +129,5 @@
 
   
    <script src="/../../resources/js/logout.js"></script>
-            <script>
-                var modalDelete = document.getElementById('exampleModal')
-               modalDelete.addEventListener('show.bs.modal', function (event) {
-
-                    var button = event.relatedTarget
-
-                  //  var recipient = button.getAttribute('data-bs-whatever')
-
-                    var modalTitle = exampleModal.querySelector('.modal-title')
-                    var modalBodyInput = exampleModal.querySelector('.modal-body input')
-
-                    modalTitle.textContent = 'Elimina film'
-
-                  //  modalBodyInput.value = recipient
-               });
-            </script>
 
 <%@include file="footer.jsp"%>

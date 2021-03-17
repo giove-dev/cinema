@@ -37,7 +37,7 @@
                         <a class="nav-link" href="http://localhost:9011/prezzi">PREZZI</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/biglietti">BIGLIETTI</a>
+                        <a class="nav-link" id="mostraBiglietti" href="/biglietti">BIGLIETTI</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/calendario">CALENDARIO</a>
