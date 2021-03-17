@@ -5,6 +5,8 @@
 <div class="card" style="width: 18rem;">
 	<div class="card-body">
 		<h5 class="card-title">Biglietto</h5>
+<div id="img">
+</div>
 	</div>
 	<ul class="list-group list-group-flush">
 		<li class="list-group-item">ID BIGLIETTO: ${biglietto.id }</li>
@@ -31,6 +33,7 @@
 	http.send();
 
 	var indice = document.getElementById("indice").value;
+	var img = document.getElementById("img");
 	console.log(indice);
 
 	http.onreadystatechange = function() {
@@ -44,6 +47,7 @@
 			var titolo = document.getElementById("titolo");
 
 			titolo.innerHTML = 'FILM: ' + myObj[indice].titolo;
+			img.innerHTML = '<img src="' + myObj[indice].locandina + '" width="100rem" class="img-fluid" alt="...">'
 			
 		}
 	}
