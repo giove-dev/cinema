@@ -148,11 +148,11 @@
 			<div class="row align-items-start">
 				<div class="col-5 mb-3">
 					<label for="giorno" class="form-label">Data</label>
-					<input type="text" name="giorno" class="form-control" id="giorno" aria-describedby="filmID">
+					<input  type="date" value="2021-04-01" required pattern="\d{4}-\d{2}-\d{2}" name="giorno" class="form-control" id="giorno" aria-describedby="filmID">
 				</div>
 				<div class="col-5 mb-3">
 					<label for="ora" class="form-label">Ora inizio</label>
-					<input type="text" name="ora" class="form-control" id="ora" aria-describedby="userID">
+					<input type="time" requried pattern="(0[0-9]|1[0-9]|2[0-3])(:[0-5][0-9]){2}" name="ora" class="form-control" id="ora" aria-describedby="userID">
 				</div>                   
 				<div class="col-2 mb-3">
 				

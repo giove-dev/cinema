@@ -9,10 +9,10 @@
 			<span class="border border-secondary mt-5 bg-dark text-light">
 				<div class="col-8 mx-auto mt-2">
 					<p>
-						<cite>Il cinema � l'unica forma d'arte che - proprio perch�
-							operante all'interno del concetto e dimensione di tempo - � in
+						<cite>Il cinema	&eacute; l'unica forma d'arte che - proprio perch&eacute;
+							operante all'interno del concetto e dimensione di tempo - &eacute; in
 							grado di riprodurre l'effettiva consistenza del tempo - l'essenza
-							della realt� - fissandolo e conservandolo per sempre.</cite>
+							della realt&aacute; - fissandolo e conservandolo per sempre.</cite>
 					</p>
 					<p class="col text-right">Andrej Tarkovskij</p>
 				</div>
