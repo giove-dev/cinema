@@ -164,14 +164,14 @@
                         <h3>
                             <a
                             href="/films/dettaglio/${film[i].getId()}"
-                            style="text-decoration: none">${film[i].titolo}</a>
+                            style="text-decoration: none; color: white">${film[i].titolo}</a>
                         </h3>
                     </div>
                     <div class="col-11 col-sm-11 col-md-3 ms-3 mb-3">
-                        <h3>Sala: ${film[i].sala}</h3>
-                        <h3>Data e Ora:</h3>
-                        <h4>${film[i].giorno}</h4>
-                        <h4>${film[i].ora}</h4>
+                        <h3  style="color: white">Sala: ${film[i].sala}</h3>
+                        <h3 style="color: white">Data e Ora:</h3>
+                        <h4 style="color: white">${film[i].giorno}</h4>
+                        <h4 style="color: white">${film[i].ora}</h4>
                         <a class="btn btn-primary btn-sm mb-1" href="/admin/films/update/${film[i].id}">modifica</a>
                         <a  id="wannaDelete"
                             class="btn btn-danger btn-sm mb-1"

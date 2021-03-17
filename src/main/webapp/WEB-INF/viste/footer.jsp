@@ -7,15 +7,15 @@
                        
                             <div class="col-11 col-sm-6 col-md-3 text-light bg-dark mt-2">
                                 CINEMA <br>
-                                <a class="footer-link" href="#">Chi siamo</a> <br>
-                                <a class="footer-link" href="#">I nostri cinema</a> <br>
-                                <a class="footer-link" href="http://localhost:9011/lavora">Lavora con noi</a>
+                                <a class="footer-link" style="text-decoration: none;" href="#">Chi siamo</a> <br>
+                                <a class="footer-link" style="text-decoration: none;" href="#">I nostri cinema</a> <br>
+                                <a class="footer-link" style="text-decoration: none;" href="http://localhost:9011/lavora">Lavora con noi</a>
                             </div>
                             <div class="col-11 col-sm-5 col-md-3 text-light bg-dark mt-2">
                                 NOTE LEGALI <br>
-                                <a class="footer-link" href="#">Regolamenti</a> <br>
-                                <a class="footer-link" href="#">Privacy Policy</a> <br>
-                                <a class="footer-link" href="#">Cookie Policy</a>
+                                <a class="footer-link"   style="text-decoration: none;"  href="#">Regolamenti</a> <br>
+                                <a class="footer-link" style="text-decoration: none;" href="#">Privacy Policy</a> <br>
+                                <a class="footer-link"style="text-decoration: none;" href="#">Cookie Policy</a>
                             </div>
                             <div class="col-11 col-sm-6 col-md-3 text-light bg-dark mt-2">
                                 CONTATTI <br>

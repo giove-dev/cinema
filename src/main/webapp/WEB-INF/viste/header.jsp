@@ -7,13 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 
 <!-- per cambiare font sostituire quello sotto e andare su css e modificare il font -->
 <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../../../../resources/css/style.css">
-
+<link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <title>Multisala</title>
 </head>
 <body>
@@ -33,9 +33,7 @@
                     <li class="nav-item">
                         <a class="nav-link" id="catalogo" href="">CATALOGO</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/admin/films">ADMIN</a>
-                    </li>
+                   
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost:9011/prezzi">PREZZI</a>
                     </li>

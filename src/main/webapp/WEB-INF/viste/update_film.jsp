@@ -120,7 +120,9 @@
 	</div>
 	<div class="col-12 col-sm-6 col-md-5 ms-2 mt-5 mb-5"> 
 		<form action="/admin/updateFilm/${film.id}" method="post">
-			<h2>MODIFICA FILM</h2>
+			<h2><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+				<path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+			  </svg> MODIFICA FILM</h2>
 			<div class="row align-items-start">
 				
 				<div class="col-6 mb-3">
@@ -165,13 +167,26 @@
 			</div>
 			<div class="mb-3">
 				<label for="locandina" class="form-label">Link locandina</label>
-				<input type="text" name="locandina" class="form-control" id="locandina" aria-describedby="link" value="${film.locandina}">
+				<input id="takeThis" type="text" name="locandina" class="form-control" id="locandina" aria-describedby="link" value="${film.locandina}">
 			</div>
 			<button type="submit" class="btn btn-primary" value="update film">MODIFICA</button>
 		  </form>
 	</div>
-	<div class="col-12 col-sm-12 col-md-3 mt-5 mb-5">
-		<img src="http://placekitten.com/400/600"><br>
+	<div  class="col-12 col-sm-12 col-md-3 mt-5 mb-5">
+		<img id="toChange"src="${film.locandina}"><br>
 	</div>
 </div>
+
+<script type="text/javascript">
+
+	var imgChange = document.getElementById("toChange");
+	   var take = document.getElementById("takeThis");
+   
+	   take.addEventListener("change",changeSource,false);
+   
+	   function changeSource(){
+		   imgChange.src= take.value;
+	   }
+   
+	   </script>
 <%@include file="footer.jsp"%>

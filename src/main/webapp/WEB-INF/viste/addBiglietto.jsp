@@ -2,6 +2,8 @@
 
 
 <style>
+	body{
+		background-color:rgb(202, 199, 199);}
 	[title]:hover:after{
   content: attr(title);
   font: 1em sans-serif;
@@ -49,9 +51,9 @@
 </form>
 	   	</div>
 	   	<div class="col-6 col-sm-5 col-md-3">
-			<div class="row row-cols-1">
+			<div class="row row-cols-1 ">
 
-				<div class="col">
+				<div class="col ">
 					<button class="btn btn-outline-primary text-center" style="width:2rem text-center" value="L1" title="L1" type="submit">&#10148;</button>
 					<button class="btn btn-outline-primary text-center" style="width:2rem text-center" value="L2" title="L2" type="submit">&#10148;</button>
 					<button class="btn btn-outline-primary text-center" style="width:2rem text-center" value="L3" title="L3" type="submit">&#10148;</button>

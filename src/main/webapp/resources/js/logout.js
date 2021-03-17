@@ -3,9 +3,11 @@ var home = document.getElementById("home");
 var catalogo =document.getElementById("catalogo");
 var logoutAdmin = document.getElementById("logoutAdmin");
 var mostraNascondi = document.getElementById("mostraBiglietti");
+var abbonamento = document.getElementById("abbonamento");
 logout.addEventListener("click", slogga,false);
 home.addEventListener("click", diffHome,false);
 catalogo.addEventListener("click",diffCatalogo,false);
+
 try {
    logoutAdmin.addEventListener("click",slogga,false); 
 } catch (error) {
@@ -63,5 +65,6 @@ function mostra(){
     var tipo= localStorage.getItem("Loggato");
    if (tipo==null || tipo=="A")  {
       mostraNascondi.style.display = "none";
+      abbonamento.style.display = "none";
   }
 }

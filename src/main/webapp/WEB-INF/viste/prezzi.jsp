@@ -23,7 +23,7 @@
 	<!-- titolo calendario -->
 
 	<!-- Calendario con 2 colonne: 1 col. FILM IN SALA NON SCADUTI, 2 col. FILM ATTUALMENTE IN SALA. -->
-	<table class="table table-bordered">
+	<table class="table table-bordered bg-light">
 		<thead>
 			<tr>
 				<th scope="col">SPETTACOLI</th>
@@ -50,7 +50,7 @@
 
 		</tbody>
 	</table>
-
+ 
 	<div class="float-left">
 		<div class="card" style="width: 23rem;">
 			<div class="card-body">

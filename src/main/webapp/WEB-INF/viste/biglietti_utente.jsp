@@ -1,9 +1,16 @@
 <%@include file="header.jsp"%>
-<h2>Biglietti di: '${keyword}'</h2>
 
-<ul>
-	<c:forEach var="i" begin="0" end="${searchResult.size()-1}">
+<h2 style="text-align:center; margin-top:1.5rem; margin-bottom:1rem">Biglietti di: '${keyword}'</h2>
 
+
+
+<div class="container-fluid">
+	<div class="d-flex justify-content-between mx-5">
+
+
+		<div class="row">
+		<c:forEach var="i" begin="0" end="${searchResult.size()-1}">
+					<div class="col-3 mb-1">
 
 		<div class="card" style="width: 18rem;">
 			<div class="card-body">
@@ -24,9 +31,17 @@
 					href="/biglietto/dettaglio/${searchResult[i].id}">dettaglio</a>
 			</div>
 		</div>
+	</div>
+	
+	
+	
+	
+</c:forEach>
+</div>
 
-	</c:forEach>
-</ul>
+	</div>
+</div>
+	
 
 
-<%@include file="footer.jsp"%>
+<div class="fixed-bottom"><%@include file="footer.jsp"%></div>

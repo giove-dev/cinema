@@ -27,7 +27,7 @@ function submit() {
     }
 window.setTimeout(function(){
     window.location.href="http://localhost:9011/biglietti/utente/";
-    }, 100);
+    }, 700);
 </script>
  
 <div class="fixed-bottom">

@@ -2,7 +2,8 @@
 *{
 	font-family: 'Lora', serif;
 }
-
+body{ background-color:rgb(107, 106, 106);
+}
 .banner img{
     max-height: 20rem;
     padding: 0.5rem;

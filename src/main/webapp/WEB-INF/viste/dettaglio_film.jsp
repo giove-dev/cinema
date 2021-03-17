@@ -13,12 +13,12 @@
     
   </div>
 	<div style="border: 1px solid rgba(0, 0, 0, 0.158)">
-		<img src="${film.locandina }" alt=”biglia” style="float: left; margin: 5px"
+		<img src="${film.locandina }" alt=”biglia” style="float: left; margin: 5px;margin-top:15px"
 			width="29%">
 		<p>
 
 			<dl
-			class="row">
+			class="row" style="background-color:rgb(202, 199, 199) ">
                 <dt class="col-sm-3">Descrizione film</dt>
                 <dd class="col-sm-9">${film.descrizione }</dd>
              

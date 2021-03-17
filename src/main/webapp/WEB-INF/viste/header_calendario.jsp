@@ -30,9 +30,7 @@
                     <li class="nav-item">
                         <a class="nav-link" id="catalogo" href="">CATALOGO</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/admin/films">ADMIN</a>
-                    </li>
+                  
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost:9011/prezzi">PREZZI</a>
                     </li>
