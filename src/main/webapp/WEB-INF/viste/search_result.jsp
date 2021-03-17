@@ -10,7 +10,20 @@
 			  </svg>    Risultati ricerca per: "${keyword}"</h1>
 		</div>
 <!-- da finire -->
-
+		<c:if test="${searchResult.size() == 0}">
+		
+		<div class="text-center">
+        <div class="alert" role="alert">
+            <img src="/../../resources/img/logo_2.png" class="img-fluid" alt="ERRORE" width="10%"><br>
+            <br><h4 class="alert-heading">Nessun risultato trovato :(</h4>
+            <p>Torna alla pagina HOME</p>
+            <hr>
+            
+            <a class="btn btn-dark" id="backHome" href="">HOME</a>
+        </div>
+    </div>
+</c:if>
+<c:if test="${searchResult.size() != 0}">
 		<c:forEach var="i" begin="0" end="${searchResult.size()-1}">
 			<div class="col-2 col-sm-3 col-md-4">
             </div>
@@ -32,8 +45,8 @@
         </div>
     </div>
 		</c:forEach>
+		</c:if>
 	 </div>
-
 </div>
 
 

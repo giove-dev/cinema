@@ -179,5 +179,10 @@ public class FilmCtrl {
 		return "work";
 	}
 	
+	@RequestMapping("nessunRisultato")
+	public String noResultsFound() {
+		return "noResult";
+	}
+	
 	
 }

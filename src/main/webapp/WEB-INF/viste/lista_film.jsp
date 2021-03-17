@@ -220,7 +220,7 @@
   <ul class="pagination justify-content-center">
     <c:if test="${currentPage != 1 }">
 	<li class="page-item">
-      <a class="page-link" href="http://localhost:9011/admin/films/${currentPage - 1}" tabindex="-1" aria-disabled="true">Previous</a>
+      <a class="page-link" href="http://localhost:9011/admin/films/${currentPage - 1}" tabindex="-1" aria-disabled="true">Indietro</a>
     </li>
     </c:if>
     <c:forEach begin="1" end="${totalPages}" var="i">
@@ -236,7 +236,7 @@
     
     <c:if test="${currentPage lt totalPages}">
     <li class="page-item">
-      <a class="page-link" href="http://localhost:9011/admin/films/${currentPage + 1}">Next</a>  
+      <a class="page-link" href="http://localhost:9011/admin/films/${currentPage + 1}">Avanti</a>  
     </li>
   </c:if>
   </ul>
