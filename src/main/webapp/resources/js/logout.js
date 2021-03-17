@@ -7,6 +7,8 @@ var abbonamento = document.getElementById("abbonamento");
 logout.addEventListener("click", slogga,false);
 home.addEventListener("click", diffHome,false);
 catalogo.addEventListener("click",diffCatalogo,false);
+var eventi= document.getElementById("eventi");
+eventi.addEventListener("click",diffCalendar,false);
 
 try {
    logoutAdmin.addEventListener("click",slogga,false); 
@@ -67,4 +69,24 @@ function mostra(){
       mostraNascondi.style.display = "none";
       abbonamento.style.display = "none";
   }
+}
+
+
+function diffCalendar(){
+    var tipo= localStorage.getItem("Loggato");
+    if (tipo=="A"){
+        window.setTimeout(function(){
+            window.location.href="http://localhost:9011/admin/eventi";
+            }, 4);
+            console.log(tipo);
+    }else if(tipo =="B"){
+        window.setTimeout(function(){
+            window.location.href="http://localhost:9011/calendario";
+            }, 4);
+    }else if(tipo ==null){
+        window.setTimeout(function(){
+            window.location.href="http://localhost:9011/calendario";
+            }, 4);
+    }
+    
 }

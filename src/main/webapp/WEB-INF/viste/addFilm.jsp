@@ -57,7 +57,7 @@
                     </svg>
                 </div>
                 <div class="col-9">
-                    <a href="/calendario" class="text-reset">
+                    <a href="http://localhost:9011/admin/eventi" class="text-reset">
                         <h4>CALENDARIO</h4>
                     </a>
                 </div>

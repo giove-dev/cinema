@@ -36,7 +36,7 @@
                     </li>
                 
                     <li class="nav-item">
-                        <a class="nav-link" href="/calendario">CALENDARIO</a>
+                        <a class="nav-link" id="eventi" href="">CALENDARIO</a>
                     </li>
                 </ul>
                 <form class="d-flex" action="search" method="get">

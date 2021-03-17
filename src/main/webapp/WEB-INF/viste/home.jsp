@@ -83,46 +83,48 @@
 					<path d="M0 1a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V1zm9 0a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1V1zm0 9a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1h-5a1 1 0 0 1-1-1v-5z"/>
 				  </svg> </h1>
 			</div>
-
+       
 			<div class="col-12 col-sm-6 col-md-3 mb-4 ">
-				<img src="http://placekitten.com/200/300"><br>
-				<h4>
-					<a href="/generi/${film[7].getGenere()}"
-						style="text-decoration: none"></a>
-				</h4>
+				<a href="http://localhost:9011/generi/Thriller" ><img src="http://placekitten.com/200/300">  </a>
+				<br>
+		
 			</div>
 			<div class="col-12 col-sm-6 col-md-3 mb-3">
-				<img src="http://placekitten.com/200/300"><br>  
+				<a href="http://localhost:9011/generi/Animazione" ><img src="http://placekitten.com/200/300">  </a>
+				<br>  
 				
 			</div>
 			<div class="col-12 col-sm-6 col-md-3 mb-2">
-				<img src="http://placekitten.com/200/300"><br>  
+				<a href="http://localhost:9011/generi/Drammatico" ><img src="http://placekitten.com/200/300">  </a>
+				<br>  
 				
 			</div>
 			<div class="col-12 col-sm-6 col-md-3 mb-2">
-				<img src="http://placekitten.com/200/300"><br>  
+				<a href="http://localhost:9011/generi/Commedia" ><img src="http://placekitten.com/200/300">  </a>
+					<br>  
 				
 			</div>
 		</div>
 		<div class="row">
 
 			<div class="col-12 col-sm-6 col-md-3 mb-2">
-				<img src="http://placekitten.com/200/300"><br>
-				<h4>
-					<a href="/generi/${film[7].getGenere()}"
-						style="text-decoration: none">${film[7].genere}</a>
-				</h4>
-			</div>
-			<div class="col-12 col-sm-6 col-md-3 mb-2">
-				<img src="http://placekitten.com/200/300"><br>  
+				<a href="http://localhost:9011/generi/Azione" ><img src="http://placekitten.com/200/300">  </a>
+				<br>
 				
 			</div>
 			<div class="col-12 col-sm-6 col-md-3 mb-2">
-				<img src="http://placekitten.com/200/300"><br>  
+				<a href="http://localhost:9011/generi/Avventura" ><img src="http://placekitten.com/200/300">  </a>
+				<br>  
 				
 			</div>
 			<div class="col-12 col-sm-6 col-md-3 mb-2">
-				<img src="http://placekitten.com/200/300"><br>  
+				<a href="http://localhost:9011/generi/Thriller" ><img src="http://placekitten.com/200/300">  </a>
+				<br>  
+				
+			</div>
+			<div class="col-12 col-sm-6 col-md-3 mb-2">
+				<a href="http://localhost:9011/generi/Thriller" ><img src="http://placekitten.com/200/300">  </a>
+				<br>  
 				
 			</div>
 		</div>

@@ -8,7 +8,7 @@
                             <div class="col-11 col-sm-6 col-md-3 text-light bg-dark mt-2">
                                 CINEMA <br>
                                 <a class="footer-link" style="text-decoration: none;" href="#">Chi siamo</a> <br>
-                                <a class="footer-link" style="text-decoration: none;" href="#">I nostri cinema</a> <br>
+                                <a class="footer-link" style="text-decoration: none;" href="http://localhost:9011/sedi">I nostri cinema</a> <br>
                                 <a class="footer-link" style="text-decoration: none;" href="http://localhost:9011/lavora">Lavora con noi</a>
                             </div>
                             <div class="col-11 col-sm-5 col-md-3 text-light bg-dark mt-2">

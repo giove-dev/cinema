@@ -23,7 +23,7 @@ button {
   -webkit-border-radius: 40px;
   border-radius: 40px;
   border-radius: 50%;
-  margin: 20px auto;
+  margin: 40px auto;
   padding: 0;
   position: relative;
   box-sizing: content-box;
@@ -41,7 +41,7 @@ button {
   position: absolute;
   width: 60px;
   height: 120px;
-  background: white;
+  background: rgb(107, 106, 106);;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
 }
@@ -85,7 +85,7 @@ button {
 .sa-icon.sa-success .sa-fix {
   width: 5px;
   height: 90px;
-  background-color: white;
+  background-color: rgb(107, 106, 106);
   position: absolute;
   left: 28px;
   top: 8px;
@@ -309,7 +309,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 }, false);
 window.setTimeout(function(){
-    window.location.href="http://localhost:9011/admin/films/";
+  var tipo= localStorage.getItem("Loggato");
+    if (tipo=="A"){
+
+    window.location.href="http://localhost:9011/admin/films/";}
+    else {  window.location.href="http://localhost:9011/home"}
     }, 4000);
 </script>
 

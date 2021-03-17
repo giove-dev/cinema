@@ -25,7 +25,7 @@
               </svg>
         <h5 class="card-title">CALENDARIO</h5>
         <p class="card-text">Calendario dei film presenti.</p>
-        <a href="#" class="btn btn-secondary">PROGRAMMAZIONE</a>
+        <a href="http://localhost:9011/admin/eventi" class="btn btn-secondary">PROGRAMMAZIONE</a>
       </div>
     </div>
   </div>

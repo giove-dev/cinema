@@ -183,6 +183,18 @@ public class FilmCtrl {
 	public String noResultsFound() {
 		return "noResult";
 	}
+	@RequestMapping("/admin/eventi")
+	public ModelAndView eventi() {
 	
+	List<Film> films = s.getAll();
+	
+	return new ModelAndView("calendario_admin", "film", films);
+	}
+	
+	
+	@RequestMapping("sedi")
+	public String nostriCinema() {
+		return "nostriCinema";
+	}
 	
 }
