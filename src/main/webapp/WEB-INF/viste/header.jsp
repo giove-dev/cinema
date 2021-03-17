@@ -39,9 +39,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="http://localhost:9011/prezzi">PREZZI</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="mostraBiglietti" href="/biglietti">BIGLIETTI</a>
-                    </li>
+                 
                     <li class="nav-item">
                         <a class="nav-link" href="/calendario">CALENDARIO</a>
                     </li>
@@ -65,6 +63,13 @@
     
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
+   
+    <li class="dropdown-item">
+        <a class="nav-link" id="mostraBiglietti" href="/biglietti">Biglietti</a>
+    </li>
+    <li class="dropdown-item">
+        <a class="nav-link" id="abbonamento" href="/abbonamenti">Abbonamento</a>
+    </li> 
     <li><a class="dropdown-item" id="logout" href="#">Logout</a></li>
     <!--  <li><a class="dropdown-item" href="#">Menu item</a></li>
     <li><a class="dropdown-item" href="#">Menu item</a></li>-->

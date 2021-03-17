@@ -1,8 +1,9 @@
 <%@include file="header.jsp"%>
 
 
-
-<div class="card" style="width: 18rem;">
+<div class="container-fluid">
+	<div class="d-flex  justify-content-center">
+			<div class="card my-5" style="width: 18rem;">
 	<div class="card-body">
 		<h5 class="card-title">Biglietto</h5>
 <div id="img">
@@ -24,6 +25,10 @@
 			href="/biglietto/delete?id=${biglietto.getId()}">elimina </a>
 	</div>
 </div>
+	</div>
+
+</div>
+
 
 
 <script type="text/javascript">
