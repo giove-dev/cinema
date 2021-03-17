@@ -9,10 +9,10 @@
 			<span class="border border-secondary mt-5 bg-dark text-light">
 				<div class="col-8 mx-auto mt-2">
 					<p>
-						<cite>Il cinema è l'unica forma d'arte che - proprio perché
-							operante all'interno del concetto e dimensione di tempo - è in
+						<cite>Il cinema ï¿½ l'unica forma d'arte che - proprio perchï¿½
+							operante all'interno del concetto e dimensione di tempo - ï¿½ in
 							grado di riprodurre l'effettiva consistenza del tempo - l'essenza
-							della realtà - fissandolo e conservandolo per sempre.</cite>
+							della realtï¿½ - fissandolo e conservandolo per sempre.</cite>
 					</p>
 					<p class="col text-right">Andrej Tarkovskij</p>
 				</div>
@@ -89,6 +89,28 @@
 			<div class="col-12">
 				<h2 class="center">CATEGORIE</h2>
 			</div>
+
+			<div class="col-12 col-sm-6 col-md-3 mb-2">
+				<img src="http://placekitten.com/200/300"><br>
+				<h4>
+					<a href="/generi/${film[7].getGenere()}"
+						style="text-decoration: none">${film[7].genere}</a>
+				</h4>
+			</div>
+			<div class="col-12 col-sm-6 col-md-3 mb-2">
+				<img src="http://placekitten.com/200/300"><br> CATEGORIA
+				2
+			</div>
+			<div class="col-12 col-sm-6 col-md-3 mb-2">
+				<img src="http://placekitten.com/200/300"><br> CATEGORIA
+				3
+			</div>
+			<div class="col-12 col-sm-6 col-md-3 mb-2">
+				<img src="http://placekitten.com/200/300"><br> CATEGORIA
+				4
+			</div>
+		</div>
+		<div class="row">
 
 			<div class="col-12 col-sm-6 col-md-3 mb-2">
 				<img src="http://placekitten.com/200/300"><br>
