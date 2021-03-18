@@ -20,12 +20,12 @@ try {
 document.addEventListener("DOMContentLoaded",mostra,false);
 
 function slogga(){
-    window.setTimeout(function(){
+    localStorage.clear();
         window.location.href="http://localhost:9011/home";
-        }, 4);
+        }
 
-        localStorage.clear();
-}
+       
+
 function diffHome(){
     var tipo= localStorage.getItem("Loggato");
     if (tipo=="A"){

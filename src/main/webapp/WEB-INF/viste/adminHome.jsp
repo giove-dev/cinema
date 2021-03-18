@@ -46,7 +46,7 @@
 </div>
 </div>
 
-<div class="container">
+<div class="container" style="margin-bottom:8rem">
 <div class="row text-center mt-5">
   <div class="col-12 col-sm-6 col-md-6">
     <div class="card" style="background-color:WHITESMOKE">
