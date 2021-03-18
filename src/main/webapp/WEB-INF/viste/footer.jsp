@@ -1,6 +1,6 @@
  <hr>
  
-          <div class="footer px-2 py-2 bg-dark" align="center">
+          <div class="footer px-3 py-2 bg-dark" align="center">
             
                         <div class="row align-items-center" >
                             <div class="rows"></div>
