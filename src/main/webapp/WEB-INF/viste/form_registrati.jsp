@@ -64,7 +64,7 @@
 			event.preventDefault();
 			return false;
 		} else if (user.length > 16) {
-			alert("Hai utilizzato pi� di 16 caratteri per l'Username");
+			alert("Hai utilizzato + di 16 caratteri per l'Username");
 			document.myForm.username.focus();
 			event.preventDefault();
 			return false;
