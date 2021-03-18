@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded',submit,false);
 function submit() {
         document.getElementById("letsgo").click(); // Simulates button click
         document.tickets.submit(); // Submits the form without the button
+        window.location.href="http://localhost:9011/abbonamenti/utente/";
     }
-window.setTimeout(function(){
-    window.location.href="http://localhost:9011/abbonamenti/utente/";
-    }, 100);
+
+    
 </script>
  
 <div class="fixed-bottom">
