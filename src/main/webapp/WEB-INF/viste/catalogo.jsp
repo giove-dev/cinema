@@ -100,7 +100,7 @@
         <td><a href="http://localhost:9011/catalogo/${currentPage + 1}">Next</a></td>
     </c:if> --%>
 
-      
+<br>      
 <nav aria-label="Page navigation example">
   <ul class="pagination justify-content-center">
     <c:if test="${currentPage != 1 }">
@@ -110,7 +110,7 @@
     </c:if>
     <c:forEach begin="1" end="${totalPages}" var="i">
                 <c:choose>
-                    <c:when test="${currentPage eq i}">                      
+                    <c:when test="${currentPage == i}">                      
                          <li class="page-item"><a class="page-link">${i}</a></li>
                     </c:when>
                     <c:otherwise>
@@ -119,7 +119,7 @@
                 </c:choose>
             </c:forEach>
     
-    <c:if test="${currentPage lt totalPages}">
+    <c:if test="${currentPage < totalPages}">
     <li class="page-item">
       <a class="page-link" href="http://localhost:9011/catalogo/${currentPage + 1}">Avanti</a>  
     </li>
