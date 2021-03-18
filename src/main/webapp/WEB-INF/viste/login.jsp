@@ -67,7 +67,7 @@
 				<div class="form-floating">
 					<input type="password" class="form-control mb-3" id="password"
 						placeholder="password"> <label for="password">Password</label>
-					<input type="checkbox" onclick="show()"> Mostra password
+					<input type="checkbox" onclick="show()" style="margin-bottom: 0.7rem;"> Mostra password
 				</div>
 
 				<button type="submit" id="reg" class="btn btn-primary mb-3">LOGIN</button>
@@ -89,11 +89,9 @@
                     </form> -->
 
 				<div class="row align-items-start ">
+					
 					<div class="col-md-6">
-						<a class="link" href="#">Password dimenticata?</a>
-					</div>
-					<div class="col-md-6">
-						<a class="link" href="/utenti/add">Non sei registrato? Registrati!</a>
+						<a  style="font-size:1.3rem; text-decoration:none; color:black;" class="link" href="/registrazione">Non sei registrato? Registrati!</a>
 					</div>
 				</div>
 			</div>

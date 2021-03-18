@@ -1,20 +1,55 @@
 <%@include file="header.jsp"%>
+<div class="container">
+<div class="display-6 my-2 p-1 " style="background-color:white;">
+	<h1 class= "animate__animated animate__heartBeat" style="text-align:center; margin-bottom:2rem; margin-top:2rem"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-person-square" viewBox="0 0 16 16">
+		<path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+		<path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm12 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1v-1c0-1-1-4-6-4s-6 3-6 4v1a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12z"/>
+	  </svg> Registrazione</h1>
+</div>	
+</div>
 
-<h1>Registrati!</h1>
 
 
-<form name="myForm" id="myForm" action="addUtente" method="post">
+<div class="container-fluid" style="text-align:center">
+	<div class="d-flex justify-content-center">
+			<form name="myForm" id="myForm" style="width:17rem" action="/registrazione/addUtente" method="post">
 
 	<!-- 	<input type="hidden" name="id" value="null"> -->
-	<input type="email" class="form-control mt-3 mb-3" name="email" placeholder="email"> <input
-		type="text" class="form-control mt-3 mb-3" id="user" name="username" placeholder="username">
+	<div class="form-floating">
+		<input type="Nome" class="form-control mt-3 mb-3" name="nome" placeholder=""> 
+		<label for="nome" >Nome</label>
+	</div>
+	<div class="form-floating">
+			<input type="Cognome" class="form-control mt-3 mb-3" name="cognome" placeholder=""> 
+			<label for="cognome">Cognome</label> 
+	</div>
+<div class="form-floating">
+	<input type="email" class="form-control mt-3 mb-3" name="email" placeholder=""> 
+	<label for="email">Email</label> 
+
+</div>
+<div class="form-floating">
+	<input
+		type="text" class="form-control mt-3 mb-3" id="user" name="username"  placeholder="">
+		<label for="username">Username</label>
+</div>
+	
 	<div class="form-text" id="feedUser"></div>
-	<input type="password" class="form-control mt-3 mb-3" name="password" placeholder="password">
+	<div class="form-floating">
+		<input type="password" class="form-control mt-3 mb-3" name="password" placeholder="">
+		<label for="password">Password</label>
+	</div>
+	
 	<input type="hidden" name="tipo" value="B"> <input
 		type="hidden" name="firma" value="Utenti con diritti minimi">
 
-	<input type="submit" class="btn btn-primary mb-3" value="aggiungi utente">
+	<input type="submit" class="btn btn-primary mb-3" value="Registrami">
 </form>
+	</div>
+
+</div>
+
+
 
 <script type='text/javascript'>
 	var username = document.getElementById('user');
@@ -29,7 +64,7 @@
 			event.preventDefault();
 			return false;
 		} else if (user.length > 16) {
-			alert("Hai utilizzato più di 16 caratteri per l'Username");
+			alert("Hai utilizzato piï¿½ di 16 caratteri per l'Username");
 			document.myForm.username.focus();
 			event.preventDefault();
 			return false;
