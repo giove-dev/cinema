@@ -7,7 +7,8 @@
         </div>
 
     <c:forEach var="i" begin="0" end="${film.size()-1}">
-        <div class="col 12 .col-sm-9 mt-5 mx-5">
+      <div class="animate__animated animate__fadeIn" style="animation-duration: 2s;">
+          <div class="col 12 .col-sm-9 mt-5 mx-5">
 
 
                
@@ -67,7 +68,8 @@
                  
                 
                 </div>    
-        </div>       
+        </div>  </div> 
+         
 </c:forEach>
 
 <%-- <h3>NON cancellare per adesso</h3>

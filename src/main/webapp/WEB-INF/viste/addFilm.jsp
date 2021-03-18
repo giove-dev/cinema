@@ -182,7 +182,7 @@
 	
 	
 	<div class="col-12 col-sm-12 col-md-3 mt-5 mb-5"  >
-		<img id="toChange"  src="http://placekitten.com/400/600"><br>
+		<img  id="toChange"  src="http://placekitten.com/400/600"><br>
 	</div>
 </div>
 <script type="text/javascript">
@@ -191,10 +191,12 @@
     var take = document.getElementById("takeThis");
 
     take.addEventListener("change",changeSource,false);
-
+ 
     function changeSource(){
+       
         imgChange.src= take.value;
+        imgChange.className = ("animate__animated animate__rotateIn")
     }
-
+  
     </script>
 <%@include file="footer.jsp"%>
