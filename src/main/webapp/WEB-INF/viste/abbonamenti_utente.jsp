@@ -1,8 +1,10 @@
 <%@include file="header.jsp"%>
-<h2>Abbonamenti di: '${keyword}'</h2>
 
-<ul>
-	<c:forEach var="i" begin="0" end="${searchResult.size()-1}">
+<div class="container" style="text-align: center;margin-top:1rem;margin-bottom:1rem;"><h2>Abbonamenti di: '${keyword}'</h2></div>
+
+<div class="container-fluid">
+	<div class="d-flex justify-content-center">
+			<c:forEach var="i" begin="0" end="${searchResult.size()-1}">
 
 
 		<div class="card" style="width: 18rem;">
@@ -17,14 +19,17 @@
 			</ul>
 			<div class="card-body">
 				<a class="btn btn-danger btn-sm mb-1"
-					href="/abbonamento/delete?id=${searchResult[i].id}">elimina </a> <a
-					class="btn btn-primary btn-sm mb-1"
-					href="/abbonamento/dettaglio/${searchResult[i].id}">dettaglio</a>
+					href="/abbonamento/delete?id=${searchResult[i].id}">elimina </a> 
 			</div>
 		</div>
 
 	</c:forEach>
-</ul>
+	</div>
+</div>
 
 
-<%@include file="footer.jsp"%>
+
+
+<div class="fixed-bottom">
+	<%@include file="footer.jsp"%>
+</div>

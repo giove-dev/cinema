@@ -47,19 +47,19 @@ http.onreadystatechange = function () {
 
            
        
-                 console.log(seat)
-                  console.log(pulsanti[j].value)
+                // console.log(seat)
+                  
               
              
                 if(pulsanti[j].value==seat){
                  pulsanti[j].setAttribute("class","btn btn-danger disabled")
-                 console.log(seat + " questo coincide")
+                
                 }
+                console.log(pulsanti[j].value)
                 
               } 
               
             }
-     
 }
 
 }

@@ -4,7 +4,7 @@
 <form action="/abbonamento/updateAbb/${abbonamento.getId()}"
 	method="post">
 
-			  <label for="film_id" class="form-label">Inserire la nuova rimanenza</label>
+			  <label for="film_id" class="form-label"></label>
 
 	<input type="hidden" name="rimanenza" class="form-control" id="rimanenza"
 		aria-describedby="rimanenza">
@@ -16,7 +16,7 @@
 		id="utente_username" aria-describedby="utente_username"
 		value="${abbonamento.utente_username}">
 
-	<button type="submit" id="btnX" class="btn btn-primary" value="update abb">salva</button>
+	<button type="submit" id="btnX" class="btn btn-primary" value="update abb"></button>
 
 </form>
 
@@ -25,7 +25,8 @@
 
 var rim = document.getElementById('rim').value;
 var rimanenzaAbb = document.getElementById('rimanenza');
-
+var bottoneRimanenza = document.getElementById('btnX');
+document.addEventListener("DOMContentLoaded",automateRimanenza,false);
 	console.log(rim);
 
 	q = localStorage.getItem("quantita");
@@ -34,6 +35,10 @@ var rimanenzaAbb = document.getElementById('rimanenza');
 	rimanenzaAbb.value = rim - q;
 	console.log(rimanenzaAbb);
 	
-</script>
 
-<%@include file="footer.jsp"%>
+	function automateRimanenza(){
+		btnX.style.display = "none"
+		btnX.click();
+	}
+</script>
+<div class="fixed-bottom"><%@include file="footer.jsp"%></div>

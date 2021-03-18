@@ -5,10 +5,10 @@
 
 
 <div class="container-fluid">
-	<div class="d-flex justify-content-between mx-5">
+	<div class="d-inline-flex justify-content-between mx-5">
 
 
-		<div class="row">
+		
 		<c:forEach var="i" begin="0" end="${searchResult.size()-1}">
 					<div class="col-3 mb-1">
 
@@ -37,7 +37,7 @@
 	
 	
 </c:forEach>
-</div>
+
 
 	</div>
 </div>
