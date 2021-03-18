@@ -44,4 +44,6 @@
 	
 
 
-<div class="fixed-bottom"><%@include file="footer.jsp"%></div>
+<div class="fixed-bottom">
+<%@include file="footer.jsp"%>
+</div>
