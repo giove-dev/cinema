@@ -51,8 +51,8 @@
 
 			var titolo = document.getElementById("titolo");
 
-			titolo.innerHTML = 'FILM: ' + myObj[indice].titolo;
-			img.innerHTML = '<img src="' + myObj[indice].locandina + '" width="100rem" class="img-fluid" alt="...">'
+			titolo.innerHTML = 'FILM: ' + myObj[indice-1].titolo;
+			img.innerHTML = '<img src="' + myObj[indice-1].locandina + '" width="100rem" class="img-fluid" alt="...">'
 			
 		}
 	}

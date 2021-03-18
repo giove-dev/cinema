@@ -2,10 +2,11 @@ var btn = document.getElementById("btn");
 var user = document.getElementById("user");
 var pulsanti = document.getElementsByClassName('btn btn-outline-primary');
 
-var p = ['L1 ', 'L2 ', 'L3 ', 'L4 ', 'L5 ', 'L6 ', 'L7 ', 'L8 ', 'L9 ', 'L10 ', 'L11 ', 'L12 ', 'L13 ', 'L14 ', 'L15 ', 'L16 ', 'L17 ', 'L18 ', 'L19 ', 'L20 ',
-  'R1 ', 'R2 ', 'R3 ', 'R4 ', 'R5 ', 'R6 ', 'R7 ', 'R8 ', 'R9 ', 'R10 ', 'R11 ', 'R12 ', 'R13 ', 'R14 ', 'R15 ', 'R16 ', 'R17 ', 'R18 ', 'R19 ', 'R20 '
-];
-
+var p = [ ' A1 ', ' A2 ', ' A3 ', ' A4 ', ' B1 ', ' B2 ', ' B3 ', ' B4 ', ' C1 ',
+' C2 ', ' C3 ', ' C4 ', ' D1 ', ' D2 ', ' D3 ', ' D4 ', ' E1 ', ' E2 ',
+' E3 ', ' E4 ', ' A5 ', ' A6 ', ' A7 ', ' A8 ', ' B5 ', ' B6 ', ' B7 ',
+' B8 ', ' C5 ', ' C6 ', ' C7 ', ' C8 ', ' D5 ', ' D6 ', ' D7 ', ' D8 ',
+' E5 ', ' E6 ', ' E7 ', ' E8 ' ];
 
 var quant = document.getElementById("quant");
 
@@ -45,21 +46,15 @@ http.onreadystatechange = function () {
     console.log(myObj)
     for (var i = 0; i < myObj.length; i++) {
       var seat = myObj[i].posto;
-
+      console.log(seat);
       // var seat = myObj[i].posto;
       for (var j = 0; j < pulsanti.length; j++) {
-
-
-
-        // console.log(seat)
-
-
-
+        
         if (seat.includes(pulsanti[j].value)) {
+          console.log(pulsanti[j].value)
           pulsanti[j].setAttribute("class", "btn btn-danger disabled")
 
         }
-        //console.log(pulsanti[j].value)
 
       }
 
