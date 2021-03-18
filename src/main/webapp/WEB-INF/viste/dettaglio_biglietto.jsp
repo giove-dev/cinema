@@ -14,6 +14,7 @@
 		<li id="indice" value="${biglietto.film_id }" class="list-group-item">ID
 			FILM: ${biglietto.film_id }</li>
 		<li id="titolo" class="list-group-item"></li>
+		<li id="giorno" class="list-group-item"></li>
 		<li class="list-group-item">NOME: ${biglietto.utente_username }</li>
 		<li class="list-group-item">QUANTITA': ${biglietto.quantita }</li>
 		<li class="list-group-item">POSTO/I: ${biglietto.posto }</li>
@@ -48,11 +49,15 @@
 			console.log(this.status);
 
 			var myObj = JSON.parse(this.responseText);
+			console.log(myObj);
+
 
 			var titolo = document.getElementById("titolo");
+			var giorno = document.getElementById("giorno");
 
-			titolo.innerHTML = 'FILM: ' + myObj[indice].titolo;
-			img.innerHTML = '<img src="' + myObj[indice].locandina + '" width="100rem" class="img-fluid" alt="...">'
+			img.innerHTML = '<img src="' + myObj[indice-1].locandina + '" width="100rem" class="img-fluid" alt="...">';
+			titolo.innerHTML = 'FILM: ' + myObj[indice-1].titolo;
+			giorno.innerHTML = 'DATA: ' + myObj[indice-1].giorno;
 			
 		}
 	}
