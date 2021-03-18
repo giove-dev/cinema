@@ -9,10 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.context.properties.bind.DefaultValue;
 
-import net.bytebuddy.implementation.bind.annotation.Default;
 
 @Entity
 @Table(name = "utenti")
@@ -22,8 +19,8 @@ public class Utente {
 	private LocalDateTime ultimamodifica; 
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-//	@Value(value = "default")
+	//@GeneratedValue(strategy = GenerationType.IDENTITY)
+
 	private String username;
 	
 	private String password;

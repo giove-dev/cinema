@@ -36,7 +36,7 @@ public class UtentiCtrl {
 		return "prezzi";
 	}
 	
-	@RequestMapping("/utenti/add")
+	@RequestMapping("/registrazione")
 	public String formInserimento() {
 		return "form_registrati";
 	}
@@ -53,14 +53,14 @@ public class UtentiCtrl {
 //
 //	}
 	
-	@RequestMapping(path = "/utenti/addUtente")
+	@RequestMapping(path = "/registrazione/addUtente")
 	public String addUtente(@ModelAttribute("utente") Utente u) {
 			
 		Utente nuovoUtente = null; 
 				
 		nuovoUtente = s.addOne(u);
 
-		return "redirect:/admin/utenti";
+		return "redirect:/home";
 		
 
 	}
