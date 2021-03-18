@@ -24,12 +24,11 @@
     </div>
 </c:if>
 <c:if test="${searchResult.size() != 0}">
-	    <c:forEach var="i" begin="0" end="${searchResult.size()-1}">
-        <div class="container mt-3">
-          <div class="row align-items-start ">
-              <div class="col-2 col-sm-3 col-md-4">
-              </div>
-              <div class="col-7 col-sm-6 col-md-4">
+	    
+        <div class="container-fluid mt-3 ms-5">
+          <div class="d-flex justify-content-start">
+<c:forEach var="i" begin="0" end="${searchResult.size()-1}">
+              <div class="col-3">
                   <div class="card" style="width: 18rem;">
                       <img src="${searchResult[i].locandina}" class="card-img-top" alt="...">
                       <div class="card-body">
@@ -41,13 +40,12 @@
                       </div>
                   </div>
               </div>
-              <div class="col-3 col-sm-3 col-md-4">
-              </div>
+  </c:forEach>
           </div>
         </div>
         
       
-    </c:forEach>
+  
 
 		</c:if>
 
