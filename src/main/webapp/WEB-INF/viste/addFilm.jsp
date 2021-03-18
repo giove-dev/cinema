@@ -139,8 +139,19 @@
 			  <input type="text" name="titolo" class="form-control" id="titolo" aria-describedby="titolo">
 			</div>
 			<div class="mb-3">
-				<label for="genere" class="form-label">Genere</label>
-				<input type="text" name="genere" class="form-control" id="genere" aria-describedby="titolo">
+				<label for="genere" class="form-label">Genere</label> <select
+					class="form-select" name="genere"
+					aria-label="Default select example">
+					<option selected>GENERE</option>
+					<option value="Fantascienza">Fantascienza</option>
+					<option value="Animazione">Animazione</option>
+					<option value="Horror">Horror</option>
+					<option value="Commedia">Commedia</option>
+					<option value="Azione">Azione</option>
+					<option value="Avventura">Avventura</option>
+					<option value="Documentario">Documentario</option>
+					<option value="Fantasy">Fantasy</option>
+				</select>
 			</div>
 			<div class="mb-3">
 				<label for="descrizione" class="form-label">Descrizione</label>
