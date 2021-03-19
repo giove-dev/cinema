@@ -33,5 +33,6 @@
                 
              </c:forEach>
 
-
+<div class="fixed-bottom">
 <%@include file="footer.jsp"%>
+</div>
