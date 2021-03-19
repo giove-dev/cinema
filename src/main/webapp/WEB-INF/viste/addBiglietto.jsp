@@ -149,4 +149,4 @@
 
 <script src="/../../resources/js/acquista.js"></script>
 
-<%@include file="footer.jsp"%>
+<div class="fixed-bottom"><%@include file="footer.jsp"%> </div>

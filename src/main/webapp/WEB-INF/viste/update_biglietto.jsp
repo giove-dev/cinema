@@ -1,10 +1,27 @@
 <%@include file="header.jsp"%>
-
+<div class="container my-3" style="text-align:center;background-color:white"><h1><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-arrow-counterclockwise" viewBox="0 0 16 16">
+	<path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.417A6 6 0 1 0 8 2v1z"/>
+	<path d="M8 4.466V.534a.25.25 0 0 0-.41-.192L5.23 2.308a.25.25 0 0 0 0 .384l2.36 1.966A.25.25 0 0 0 8 4.466z"/>
+  </svg> Modifica biglietto</h1></div>
 <div class="container">
 
 	<div class="row mt-3">
-		<div id="films" class="col-12 col-sm-6 col-md-6 bg-light"></div>
-
+		<div  class="col-12 col-sm-6 col-md-6 bg-light">
+			 <table class="table">
+			<thead>
+			  <tr>
+				<th scope="col">Id</th>
+				<th scope="col">Titolo</th>
+				<th scope="col">Data proiezione</th>
+				
+			  </tr>
+			</thead>
+			<tbody id="films">
+		
+			</tbody>
+		  </table>
+		</div>
+       
 		<div class="col-12 col-sm-6 col-md-6 bg-light">
         <div class="row">
 
@@ -187,8 +204,7 @@
                 <form action="/biglietto/updateBiglietto/${biglietto.getId()}"
                     method="post">
     
-                    <label for="film_id" class="form-label">Inserire il numero del
-                        film che si vuole selezionare</label> <input style="width:4rem" type="text" name="film_id"
+                    <label for="film_id" class="form-label">Seleziona il numero (id) dello spettacolo</label> <input style="width:4rem" type="text" name="film_id"
                         class="form-control" id="film_id" aria-describedby="film_id"
                         value="${biglietto.film_id}"> <label for="quantita"
                         class="form-label">Quantit&aacute;</label>
@@ -239,8 +255,7 @@
 			var films = document.getElementById("films");
 
 			for (var i = 0; i < myObj.length; i++) {
-				films.innerHTML += myObj[i].id + ') ' + myObj[i].titolo + ' - '
-						+ myObj[i].giorno + '<br>';
+				films.innerHTML +='<tr> <th scope="row">'+ myObj[i].id +'</th> <td>'+myObj[i].titolo+'</td> <td>'+ myObj[i].giorno+'</td> </tr>';
 			}
 		}
 	}
@@ -300,4 +315,4 @@
 	}
 </script>
 
-<%@include file="footer.jsp"%>
+<%@include file="footer.jsp"%> 
