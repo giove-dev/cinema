@@ -6,12 +6,12 @@
 			  </svg>  CALENDARIO</h1>
         </div>
 
- <div class="container">
+ <div class="container" style="text-align:center">
 		<!-- titolo calendario -->
 
 		<!-- Calendario con 2 colonne: 1 col. FILM IN SALA NON SCADUTI, 2 col. FILM ATTUALMENTE IN SALA. -->
 		
-		<table class="table table-success table-bordered" style="background-color:GAINSBORO;">
+		<table class="table table-secondary table-bordered" style="background-color:GAINSBORO;">
 			<thead>
 				<tr>
 					<th scope="col">Film in sala oggi</th>
