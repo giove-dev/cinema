@@ -191,7 +191,7 @@
                         film che si vuole selezionare</label> <input style="width:4rem" type="text" name="film_id"
                         class="form-control" id="film_id" aria-describedby="film_id"
                         value="${biglietto.film_id}"> <label for="quantita"
-                        class="form-label">Quantità</label>
+                        class="form-label">Quantit&aacute;</label>
                         <select style="width:4rem; margin-bottom:0.5rem" class="form-select"
                         name="quantita" aria-label="Default select example">
                         <option selected>${biglietto.quantita}</option>
@@ -200,7 +200,9 @@
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
-                        </select> <input type="text" style="margin-right:2rem" id="posto" name="posto" placeholder="posto">
+                        </select>
+						<label for="posto">Seleziona il posto</label><br>
+						 <input type="text" style="margin-right:2rem" id="posto" name="posto" placeholder="posto">
     
                         <input type="hidden" name="utente_username" class="form-control"
                         id="utente_username" aria-describedby="utente_username"
