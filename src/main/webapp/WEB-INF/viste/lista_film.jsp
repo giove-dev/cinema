@@ -27,7 +27,7 @@
                 </div>
                 <div class="col-8 mb-5 mt-3 ">
                     <br>
-                        <h3>admin</h3>
+                        <h3>Admin</h3>
                         <button type="button" id="logoutAdmin" class="btn btn-outline-light">LOGOUT</button>
                     </div>
 

@@ -14,8 +14,8 @@
 				</svg>
 			</div>
 			<div class="col-8 mb-5 mt-3 ">
-				Admin<br>
-				<h3>Nome Cognome</h3>
+				<br>
+				<h3>Admin</h3>
 				<button type="button" id="logoutAdmin" class="btn btn-outline-light">LOGOUT</button>
 			</div>
 
