@@ -193,7 +193,7 @@
 	
 	
 	<div class="col-12 col-sm-12 col-md-3 mt-5 mb-5"  >
-		<img  id="toChange"  src="http://placekitten.com/400/600"><br>
+		<img  id="toChange"  style="border: 3px solid white;"" src="/../../resources/img/placeholder.png"><br>
 	</div>
 </div>
 <script type="text/javascript">
