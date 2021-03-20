@@ -103,5 +103,6 @@
 
 	myForm.addEventListener('submit', validate, false);
 </script>
-
-<%@include file="footer.jsp"%>
+<div class="fixed-bottom">
+	<%@include file="footer.jsp"%>
+</div>

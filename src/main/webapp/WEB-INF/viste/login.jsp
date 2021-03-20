@@ -138,4 +138,7 @@
 		</div>
 	</div>
 	<script src="/../../resources/js/login.js"></script>
-	<%@include file="footer.jsp"%>
+
+	<div class="fixed-bottom">
+			<%@include file="footer.jsp"%>
+	</div>
